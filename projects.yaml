@@ -1,0 +1,593 @@
+featured:
+  - title: Project Naptha
+    cat: Project Naptha
+    sub: highlight, copy and translate text from any image
+    type:
+      - extension
+    pic:
+      - img/projects/naptha.png
+    caption:  |
+              Project Naptha started out as "Images as Text"
+              the 2nd place winning entry to 2013's HackMIT Hackathon.
+
+
+              It launched 5 months later, reaching 200,000 users in a week, 
+              and was featured on the front page of Hacker News, Reddit,
+              Engadget, Lifehacker, The Verge, and PCWorld.
+
+    subprojects:
+      - title: ocrad.js
+        cat: Ocrad.js
+        pic:
+          - img/projects/ocrad.png
+        type:
+          - library
+        sub: optical character recognition in javascript with emscripten
+
+      - title: inpaint.js
+        type:
+          - library
+        sub: erase regions and objects from pictures in javascript
+
+      - title: phash.js
+        type:
+          - library
+        sub: perceptual hashing for content-based image retrieval in javascript
+
+  - title: Ajax Animator
+    sub: create and share animations in the browser
+    type:
+      - web app
+    pic:
+      - img/projects/ax.png
+    caption:  |
+              Ajax Animator was probably my first large project— I started it after I had exhausted
+              all the free trials of Macromedia Flash for making silly cartoons in 5th grade.
+
+
+              As my primary focus from the latter half of 6th grade until my early sophomore year of high
+              school, it evolved through many different iterations and spun off several smaller projects.
+
+
+              I started by downloading Mark Finkle's RichDraw SVG/VML drawing component and pasted code
+              snippets from various DHTML widget sites until I had something that looked vaguely like
+              the Flash I knew. Over the years, as I've learned more about programming, I've rewritten the
+              app several times— going from raw HTML and docment.write to DHTMLSuite to YUI/Ext to Ext 2.0.
+
+
+              Ajax Animator has been featured on MakeUseOf, InfoQ, and has its own Wikipedia article.
+    about: |
+            [Video Introduction](http://www.youtube.com/watch?v=Gt6PLGk9Fqo&feature=related) (Gadget UI). [Wave State Demo](http://www.youtube.com/watch?v=xQHSmAqvzLM). [User Made Introduction](http://www.youtube.com/watch?v=j4PlX3vaV10&feature=related) (Standard UI)
+
+            [**Run Application Now** – New Redesigned Interface with VectorEditor, Multi-Select, Onion Skinning](http://antimatter15.com/ajaxanimator/wave/)
+
+            **Standard OnlyPaths Based Versions**: [Original 0.2x Standard UI](http://antimatter15.com/ajaxanimator/build/)
+
+            **VectorEditor Based Versions**: [New Redesigned Interface with Multi-Select, Onion Skinning](http://antimatter15.com/ajaxanimator/wave/) OR [Standard UI](http://antimatter15.com/ajaxanimator/build/index.vectoreditor.htm) OR [Google Wave Gadget](https://wave.google.com/a/wavesandbox.com/#minimized:search,restored:wave:wavesandbox.com!w%252B3JUS0MHA%2525A.1) (new, must have Google Wave)
+
+            **iPad Compatible Version**: http://antimatter15.com/ajaxanimator/ipad/
+    subprojects:
+      - title: scratchpad
+        pic:
+        - img/projects/scratch.png
+        type:
+          - library
+        sub: simple cross browser scratchpad used by Khan Academy
+
+      - title: stick2
+        cat: Stick Figures
+        type:
+          - web app
+        sub: a simple skeleton based stop-motion stick figure animator
+        pic:
+          - img/projects/stick2.png
+      - title: jsgif
+        type:
+          - library
+        sub: a port of AS3GIF to generate animated gifs entirely in the browser
+        pic:
+          - img/projects/jsgif.png
+      - title: jsvectoreditor
+        cat: VectorEditor
+        type:
+          - library
+        sub: cross browser vector graphics editor powered by RaphaelJS
+        pic:
+          - img/projects/vectoreditor.png
+      - title: forkswif
+        cat: ForkSwif
+        type:
+          - desktop app
+        sub: a simple prototype of an swf authoring tool in C# based on swfmill and svgpaint
+        pic:
+          - img/projects/forkswif.png
+
+  - title: ShinyTouch
+    cat: ShinyTouch
+    sub: zero-cost optical touchscreen retrofit
+    pic:
+      - img/projects/shinytouch1.png
+      - img/projects/shinytouch2.png
+      - img/projects/shinytouch3.png
+      - img/projects/shinytouch4.png
+    type:
+      - prototype
+    caption: |
+            With an ordinary webcam pointed at any flat, semi-reflective surface, 
+            one can recover a finger's X and Y position with a perspective
+            projection, and Z by measuring the distance from a fingertip to its reflection. 
+
+            ShinyTouch won 1st place at the Fairfax County Regional Science and Engineering Fair, and competed
+            at the Virginia State Science Fair. It was recognized by the Optical Society of America, the US Patent
+            Office and the IEEE. 
+
+    description: |
+              It's easy enough to track objects with a camera, but cameras only record information in two dimensions 
+              about a world which exists in three. Crucially, it isn't possible to reliably attain depth information
+              from an arbitrary scene. However, when a flat, semi-reflective surface is observed from an oblique
+              angle, one can locate a user's finger and its corresponding reflection.  That distance corresponds to
+              Z depth, and the midpoint lies on the plane of the surface which can then be unprojected to uncover
+              X and Y. 
+
+              Imagine the ability to use any flat, semi-reflective surface as a touch input surface, using 
+              nothing more than a simple camera.
+
+              Cameras are powerful and ubiquitous, and many people have built interesting gestural interfaces. 
+              But there is a bit of a fundamental flaw: cameras can only record in two dimensions of a universe
+              which exists in three. You can vaguely estimate distance by looking at 
+
+
+
+
+  - title: Protobowl
+    sub: real time multiplayer quizbowl game
+    type:
+      - web app
+    pic:
+          - img/projects/pb.png
+          - img/projects/pb1.png
+          - img/projects/pb2.png
+          - img/projects/pb3.png
+    caption: |
+              Protobowl is a real time website for competing with friends and strangers on trivia knowledge. 
+              It runs both online and offline, and includes a database of over 90,000 questions comprised of
+              Quizbowl, Jeopardy, Science Bowl and Certamen questions.
+
+              With over a thousand daily players each staying for half hour on average, it eats a month of 
+              humanity every day. Skynet would be proud.
+
+  - title: Cloud Save
+    sub: one click save to any cloud storage locker
+    type:
+      - extension
+    pic:
+          - img/projects/cloudsave.png
+    caption: |
+              Cloud Save featured on Lifehacker, MakeUseOf, TheNextWeb, GHacks.net, HowToGeek, MacWorld, ComputerWorld, ITWorld.
+
+
+              Surplus featured on Business Insider, Lifehacker, TheNextWeb, MakeUseOf.
+
+
+              Drag2Up featured on Techcrunch, CNet, Lifehacker.
+
+    subprojects:
+      - title: Surplus
+        cat: Surplus
+        sub: Google+ notifications integration with Google Chrome
+        type:
+          - extension
+        pic:
+          - img/projects/surplus.png
+
+      - title: Drag2Up
+        cat: drag2up
+        sub: drag and drop files from your desktop onto any text field to automatically upload and share
+        type:
+          - extension
+        pic:
+          - img/projects/drag2up.png
+
+      - title: CloudFall
+        cat: CloudFall
+        sub: sublime-like text editor with dropbox sync
+        type:
+          - chrome app
+        pic:
+          - img/projects/cloudfall.png
+        caption: |
+                  In 2012, my brother and I were headed to San Fransisco (for my first time!) to attend
+                  the Google I/O conference. I heard that the flight was some ridiculous 6 hours long,
+                  and the only computer I had at the time was a tiny little Chromebook (some 2 years later,
+                  that was still the only computer that I brought to college). I thought there must have 
+                  been ample time to be productive, so I built a little text editor which could run offline
+                  and sync to dropbox (where I have all my projects folders live).
+
+      # - title: CrOS Save
+      #   sub: easily upload files from the Chrome OS file manager to any cloud storage provider
+      #   pic:
+      #     - img/projects/crossave.png
+
+  - title: Offline Wiki
+    cat: Offline Wiki
+    sub: browse the full text of wikipedia offline
+    type:
+      - web app
+    pic:
+      - img/projects/wiki.png
+    caption:  |
+              In middle school, I had an iPhone— but it didn't actually have cell service, which led to more than a few expeditions for the fabled WiFi.
+              My favorite app was Patrick Collison's [Encyclopedia](http://web.archive.org/web/20080913191907/http://collison.ie/wikipedia-iphone/),
+              which contained the full compressed contents of the English Wikipedia. It left a powerful impression on me—
+              I felt the true power of a real-life Hitchhiker's Guide.
+
+    subprojects:
+
+      - title: Project Wikify
+        cat: Project Wikify
+        sub: edit any website and share changes
+        type:
+          - extension
+        pic:
+          - img/projects/wikify.png
+
+      - title: Offline Dictionary
+        sub: look up words and definitions on Wiktionary
+        type:
+          - extension
+        pic:
+          - img/projects/dict.png
+        caption: |
+                  This is something which just does a lot of things.
+      # - title: js-wikireader
+      #   sub: load dumps of wikipedia in the browser
+
+      # - title: py-wikireader
+      #   sub: load dumps of wikipedia in python
+      #   pic:
+      #     - img/projects/pywiki.png
+
+      - title: bzip2.js
+        type:
+          - library
+        pic:
+          - img/projects/bzip.png
+        sub: a port of some bzip2 decompressor to javascript
+
+
+  - title: Icosahedron
+    sub: "contrary to popular belief, this is in fact not a dodecahedron"
+    type:
+      - art
+    pic:
+      - img/projects/ico.jpg
+    caption: |
+    subprojects:
+      - title: Dorm Weather
+        sub: the art of collecting data and totally forgetting about it 
+        type:
+          - iot
+        pic:
+          - img/projects/weather.jpg
+
+
+      - title: Droste Dorm
+        type:
+          - art
+        sub: |
+              a poster on my wall, of my wall, featuring a particular poster
+        pic:
+          - img/projects/droste.jpg
+
+      - title: Auto Scan
+        featured: false
+        type:
+          - iot
+        sub: automatically scan documents on lid close using arduino
+        pic:
+          - img/projects/scan.jpg
+
+      - title: LIFX + Music
+        featured: false
+        type: 
+          - art
+        sub: moozik
+        pic:
+          - img/projects/lifx.png
+
+  - title: Whammy
+    cat: Whammy
+    sub: a real time intraframe WebM encoder in javascript
+    type:
+      - library
+    pic:
+      - img/projects/whammy.png
+    caption: |
+              WebP is basically VP8's intraframe compression in an itsy-bitsy-yellow-polka-dot RIFF container. Weppy exploits video decoding capabilities to render WebP images, while Whammy exploits image encoding capability to encode WebM. 
+
+    subprojects:
+      - title: H.264 vs VP8
+        sub: the (mostly wrong) ambiguity of "open" and video codecs
+        type:
+          - blog
+        pic:
+          - img/projects/vp8.png
+        caption:  |
+                  When Google acquired the video compression company On2 and released their flagship codec
+                  VP8 open source and royalty-free, there was lots of controversy over whether or not H.264
+                  AVC was open.
+
+                  The post is probably obsolete and outdated nowadays. 
+      # - title: Whammy
+      #   sub: a real time javascript intraframe WebM encoder powered by a WebP canvas hack
+      #   pic:
+      #     - img/projects/whammy.png
+      - title: Weppy
+        type:
+          - library
+        sub: lightweight polyfill for WebP images in modern browsers today
+        pic:
+          - img/projects/weppy.png
+      # - title: js-ebml
+      #   sub: an implementation of the Matroska EBML container format
+
+      - title: Chromecorder
+        type:
+          - extension
+        sub: create screencasts and export them as WebM or a single compressed PNG
+
+
+
+
+  - title: MusicAlpha
+    cat: MusicAlpha
+    sub: reverse-engineered Google Music uploader
+    type:
+      - chrome app
+    pic:
+          - img/projects/musicalpha.png
+    caption:  |
+              For a long time, Google Music could only upload songs with a proprietary
+              uploader that only ran on Mac OS and Windows. With a bit (literally) of 
+              IDA Pro twiddling, it's possible to dump and reverse-engineer the 
+              protobufs that get sent to the server to negotiate file uploading.
+
+              MusicAlpha is a prototype of a cross-platform implementation of the uploader
+              as a Chrome app.
+
+    subprojects:
+      - title: player
+        sub: probably the first browser based mp3 player which could load local files
+        type:
+          - web app
+        pic:
+          - img/projects/player.png
+        caption: | 
+                  This used the new `<input type="file" directory>` feature to load entire directories from the local computer. It uses `FileReader` and JSID3v2 in order to read song metadata. 
+
+                  The interface is dominated by a gigantic search bar, and it has a fairly minimal interface for queuing songs.  
+
+
+      - title: ExFM Extras
+        sub: an extension to an extension to read ID3v2 metadata when importing music
+        type:
+          - extension
+        pic:
+          - img/projects/exfm.png
+
+      - title: JS ID3v2
+        sub: a javascript library for reading ID3 tags from MP3 files
+        type:
+          - library
+        pic:
+          - img/projects/id3.png
+
+      # - title: google-music-protocol
+      #   sub: reverse-engineered documentation for the google music upload protocol
+      #   pic:
+      #     - img/projects/gmusic.png
+
+  - title: Microwave
+    sub: mobile-friendly google wave client
+    cat: Microwave
+    type:
+      - wave
+    pic:
+          - img/projects/microwave.png
+    caption:  |
+              I spent the first year of high school mildly obsessed with Google Wave. 
+              To be fair, I still think it's pretty cool— but apparently that opinion
+              was a minority one. 
+
+              One problem was that they had tried to replace everything— email,
+              instant messaging, google docs, mailing lists and web pages— 
+              severing their ties with the outside world. Everything was contained
+              within a bloated operating-system of a web app.
+
+              Microwave was the first real third party Google Wave client. Wave Reader 
+              uses Microwave's core (magnetron?) to to publish waves as plain web pages. 
+
+    subprojects:
+      - title: Wave Embed API
+        sub: an unofficial api for embedding google wave threads as blog comments
+        type:
+          - wave
+        featured: false
+        pic:
+          - img/projects/waveembed.png
+
+      - title: Tsunami
+        sub: a gadget that crashes google wave
+        type:
+          - wave
+        caption: mentioned by xkcd!
+        featured: false
+        pic:
+          - img/projects/tsunami.png
+
+      - title: Wave Reader
+        sub: publish waves to the web with anonymous commenting and embedded gadgets
+        type:
+          - web app
+        pic:
+          - img/projects/wavereader.png
+
+      - title: Word Association
+        sub: a simple wave gadget for collaboratively building simple mindmaps
+        type:
+          - wave
+        pic:
+          - img/projects/graph.png
+
+      # - title: pywavereader
+      #   sub: a reverse-engineered desktop wave reader
+      #   pic:
+      #     - img/projects/pywave.png
+
+      - title: Awesomeness
+        type:
+          - wave
+        sub: a prototype of a federated real-time hierarchical messaging system
+        pic:
+          - img/projects/awesomeness.png
+
+      - title: Comet RPG
+        sub: an online multiplayer rpg from middle school
+        cat: CometRPG
+        type:
+          - game
+        pic:
+          - img/projects/gaem.png
+        caption: |
+                 This is by no means a good game, it's mostly not even fun. For a middle school game design competition, I decided to build a real time online mmorpg of sorts. It was inspired by PSPRPG, which was essentially the one of the first projects that got me into programming. 
+
+                 It was written with ExtJS, if you want an indication of the scale of the odd design decisions. It was powered by PHP, and stored state in lots of small files and used long-polling for real time support. 
+
+                 Since then, I've essentially lost the original code and game state, as it was hosted on some now-defunct free PHP webhosts. At one point, I tried porting it to Google App Engine, but never really finished in that endeavor. 
+
+  - title: Facebook Clock
+    sub: visualizing when friends are active on facebook
+    caption: |
+              Everyone has a bit of a daily rhythm, which often for better or worse includes scattered visitations of Facebook. I wrote a simple script which polled the Graph API every minute for a list of online friends. Each ring in the chart represents a single friend's 24 hour Facebook routine with centrality indicating total time spent. To the extent that you are your group of friends, this could be thought of as a sort of sociotemporal fingerprint. 
+    type:
+      - art
+    pic:
+      - img/projects/faceclock.jpg
+    subprojects:
+      - title: Schedule Compare
+        type:
+          - web app
+        sub: discover classmates automatically by parsing facebook status updates
+        pic:
+          - img/projects/sched.png
+
+      - title: Chat Bot
+        type:
+          - experiment
+        sub: turing complete collatz tag code over facebook chat
+        pic:
+          - img/projects/collatz.png
+
+      - title: Activity Plot
+        sub: a small experiment graphing historical profile information
+        type:
+          - experiment
+        pic:
+          - img/projects/face.png
+
+projects:
+  - title: Swipe Gesture
+    sub: multitouch gestures for chromebook and windows
+    type:
+      - extension
+    pic:
+      - img/projects/swipegesture.png
+
+  - title: Pandora's Box
+    sub: modifying the anesidora client to save pandora tracks offline
+    type:
+      - experiment
+    pic:
+      - img/projects/id3.png
+
+  - title: Planck
+    sub: coloring planck cmbr like wmap
+    type:
+      - art
+    pic:
+      - img/projects/planck.jpg
+
+  - title: Pinball
+    sub: a simple pinball game
+    type:
+      - game
+    pic:
+      - img/projects/pinball.png
+
+  - title: gravity
+    sub: a simple game with attractors
+    type:
+      - game
+    pic:
+      - img/projects/gravity.png
+
+  - title: HeapQueue.JS
+    sub: a simple priority queue in javascript
+    type:
+      - library
+    pic:
+      - img/projects/heap.png
+
+  - title: vX.JS
+    sub: a javascript library that favors size over clarity
+    type:
+      - library
+    # pic:
+    #   - img/projects/vxjs.png
+
+
+  - title: SubleqVM
+    sub: subleq vm memory visualizer
+    type:
+      - experiment
+    # pic:
+    #   - img/projects/hqx.png
+
+  - title: hqx.js
+    sub: pixel art scaling in the browser
+    type:
+      - library
+    pic:
+      - img/projects/hqx.png
+
+  - title: distributed pi
+    sub: compute pi with bpf algorithm
+    type:
+      - experiment
+    pic:
+      - img/projects/pi.png
+
+  - title: Brass Doge
+    sub: |
+          wow such ring. very mit. many class.
+    type:
+      - art
+    pic:
+      - img/projects/brassdoge.jpg
+
+    subprojects:
+      - title: Lasers
+        sub: |
+              light amplitude and stimulated emission of hashtag yolo party awesomeness
+        type:
+          - art
+        pic:
+          - img/projects/lasers.jpg
+
+      - title: Alarm/Bed
+        type: 
+          - iot
+        sub: |
+              yeah. okay.
+        pic:
+          - img/projects/alarm.jpg
