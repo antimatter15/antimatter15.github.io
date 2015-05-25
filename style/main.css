@@ -1,3 +1,4 @@
+@import "temp/test.css";
 /* code styling */
 code {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
@@ -187,7 +188,7 @@ body {
   box-sizing: border-box;
 }
 body {
-  font-family: 'Avenir Next', sans-serif;
+  font-family: 'Avenir Next', 'Zombocom', sans-serif;
   font-size: 15px;
   background-color: #e8e8e8;
   text-rendering: optimizeLegibility;

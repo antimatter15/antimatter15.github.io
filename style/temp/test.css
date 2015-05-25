@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Zombocom';
+  src: url('Zombocom-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zombocom';
+  src: url('Zombocom-Medium.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
