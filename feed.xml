@@ -438,7 +438,7 @@ There isn’t any &lt;em&gt;real&lt;/em&gt; evidence that such sweeping surveill
 </description>
     </item>
     <item>
-      <title>Whammy A Real Time Javascript WebM Encoder</title>
+      <title>Whammy: A Real Time Javascript WebM Encoder</title>
       <link>http://localhost:8080/2012/08/whammy-a-real-time-javascript-webm-encoder/</link>
       <pubDate>Sun, 19  Aug 2012 06:46:46 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/2012/08/whammy-a-real-time-javascript-webm-encoder/</guid>
@@ -453,15 +453,15 @@ There isn’t any &lt;em&gt;real&lt;/em&gt; evidence that such sweeping surveill
 &lt;p&gt;&lt;a href=&quot;http://antimatter15.github.com/whammy/clock.html&quot;&gt;http://antimatter15.github.com/whammy/clock.html&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;basic-usage&quot;&gt;Basic Usage&lt;/h2&gt;
 &lt;p&gt;First, let’s include the JS file. It’s self contained and basically namespaced, which is pretty good I guess. And it’s not too big, minified it’s only about 4KB and gzipped, it’s under 2KB. That’s like really really tiny.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='vhdl'&gt;&lt;/span&gt;&amp;amp;lt;script src=&lt;span class=&quot;hljs-string&quot;&gt;&quot;whammy.js&quot;&lt;/span&gt;&amp;amp;gt;&amp;amp;lt;/script&amp;amp;gt; `&amp;lt;/pre&amp;gt;
-The API isn&lt;span class=&quot;hljs-attribute&quot;&gt;'t&lt;/span&gt; terrible either (at least, that&lt;span class=&quot;hljs-attribute&quot;&gt;'s&lt;/span&gt; what I&lt;span class=&quot;hljs-attribute&quot;&gt;'d&lt;/span&gt; like &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt; hope)
-&amp;lt;pre&amp;gt;`var encoder = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; Whammy.Video(&lt;span class=&quot;hljs-number&quot;&gt;15&lt;/span&gt;); `&amp;lt;/pre&amp;gt;
-That `&lt;span class=&quot;hljs-number&quot;&gt;15&lt;/span&gt;` over there &lt;span class=&quot;hljs-keyword&quot;&gt;is&lt;/span&gt; the frame rate. There&lt;span class=&quot;hljs-attribute&quot;&gt;'s&lt;/span&gt; a way &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt; set the individual duration &lt;span class=&quot;hljs-keyword&quot;&gt;of&lt;/span&gt; each frame manually, but you can look &lt;span class=&quot;hljs-keyword&quot;&gt;in&lt;/span&gt; the code &lt;span class=&quot;hljs-keyword&quot;&gt;for&lt;/span&gt; that.
-&amp;lt;pre&amp;gt;`encoder.add(&lt;span class=&quot;hljs-keyword&quot;&gt;context&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;or&lt;/span&gt; canvas &lt;span class=&quot;hljs-keyword&quot;&gt;or&lt;/span&gt; dataURL); `&amp;lt;/pre&amp;gt;
-Here, you can add a frame, this happens fairly quickly because basically &lt;span class=&quot;hljs-keyword&quot;&gt;all&lt;/span&gt; it&lt;span class=&quot;hljs-attribute&quot;&gt;'s&lt;/span&gt; doing &lt;span class=&quot;hljs-keyword&quot;&gt;is&lt;/span&gt; running `.toDataURL()` &lt;span class=&quot;hljs-keyword&quot;&gt;on&lt;/span&gt; the canvas (which isn&lt;span class=&quot;hljs-attribute&quot;&gt;'t&lt;/span&gt; exactly a speed-demon either, but it&lt;span class=&quot;hljs-attribute&quot;&gt;'s&lt;/span&gt; acceptable enough most &lt;span class=&quot;hljs-keyword&quot;&gt;of&lt;/span&gt; the &lt;span class=&quot;hljs-typename&quot;&gt;time&lt;/span&gt;) &lt;span class=&quot;hljs-keyword&quot;&gt;and&lt;/span&gt; plopping the result onto an &lt;span class=&quot;hljs-keyword&quot;&gt;array&lt;/span&gt; (no computation &lt;span class=&quot;hljs-keyword&quot;&gt;or&lt;/span&gt; anything). The actual encoding only happens &lt;span class=&quot;hljs-keyword&quot;&gt;when&lt;/span&gt; you call `.compile()`
-&amp;lt;pre&amp;gt;`var output = encoder.compile(); `&amp;lt;/pre&amp;gt;
-Here, output &lt;span class=&quot;hljs-keyword&quot;&gt;is&lt;/span&gt; set &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt; a Blob. &lt;span class=&quot;hljs-keyword&quot;&gt;In&lt;/span&gt; order &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt; get a nice URL which you can &lt;span class=&quot;hljs-keyword&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt; stick &lt;span class=&quot;hljs-keyword&quot;&gt;in&lt;/span&gt; a `&amp;amp;lt;video&amp;amp;gt;` element, you need &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt; send it over &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt;`createObjectURL`
-&amp;lt;pre&amp;gt;`var url = (window.webkitURL || window.URL).createObjectURL(output); 
+&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='handlebars'&gt;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;whammy.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;javascript&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The API isn’t terrible either (at least, that’s what I’d like to hope)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='coffeescript'&gt;&lt;/span&gt;&lt;span class=&quot;hljs-reserved&quot;&gt;var&lt;/span&gt; encoder = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; Whammy.Video(&lt;span class=&quot;hljs-number&quot;&gt;15&lt;/span&gt;); 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That &lt;code&gt;15&lt;/code&gt; over there is the frame rate. There’s a way to set the individual duration of each frame manually, but you can look in the code for that.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='vhdl'&gt;&lt;/span&gt;encoder.add(&lt;span class=&quot;hljs-keyword&quot;&gt;context&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;or&lt;/span&gt; canvas &lt;span class=&quot;hljs-keyword&quot;&gt;or&lt;/span&gt; dataURL); 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here, you can add a frame, this happens fairly quickly because basically all it’s doing is running &lt;code&gt;.toDataURL()&lt;/code&gt; on the canvas (which isn’t exactly a speed-demon either, but it’s acceptable enough most of the time) and plopping the result onto an array (no computation or anything). The actual encoding only happens when you call &lt;code&gt;.compile()&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='coffeescript'&gt;&lt;/span&gt;&lt;span class=&quot;hljs-reserved&quot;&gt;var&lt;/span&gt; output = encoder.compile(); 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here, output is set to a Blob. In order to get a nice URL which you can use to stick in a &lt;code&gt;&amp;amp;lt;video&amp;amp;gt;&lt;/code&gt; element, you need to send it over to&lt;code&gt;createObjectURL&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='coffeescript'&gt;&lt;/span&gt;&lt;span class=&quot;hljs-reserved&quot;&gt;var&lt;/span&gt; url = (&lt;span class=&quot;hljs-built_in&quot;&gt;window&lt;/span&gt;.webkitURL || &lt;span class=&quot;hljs-built_in&quot;&gt;window&lt;/span&gt;.URL).createObjectURL(output); 
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And you’re done. Awesome.&lt;/p&gt;
 &lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;Weppy.fromImageArray(image[], fps)&lt;/code&gt; this is a simple function that takes a list of DataURL encoded frames and returns a WebM video. Note that the images have to all be encoded with WebP.&lt;/p&gt;
@@ -2614,6 +2614,146 @@ And magically you have a super awesome URL to link to.&lt;/p&gt;
 &lt;p&gt;How about inverse shutter glasses (which is a term I made up)? What if instead of darkening one eye, you add light through a side-mounted white LED? Radioshack sells White LEDs for $3 each (and probably you can get it cheaper elsewhere). OLEDs are apparently awesome because of their insanely low response times which are as low as 0.01ms compared to the 2ms LCDs (according to Wikipedia), and I would assume that LEDs are similar (Anything under 8ms, or 120fps should work).&lt;/p&gt;
 &lt;p&gt;I have no idea if it would work, and obviously it won’t work nearly as well as the LCD ones. Surely it would probably be pretty annoying to have light shine in your eyes, though I would hope its not that annoying. I’m not sure how it would work either, would it make your pupils shrink, and would your eye detect the un-brightened frame as dark? Or would the LED make everything white and everything hard to see, and be the equivalent of darkening everything away? Would this vary from person to person and setup-to-setup?&lt;/p&gt;
 </description>
+    </item>
+    <item>
+      <title>Pure JavaScript HTML5 &lt;canvas&gt; to (Animated) GIF Conversion</title>
+      <link>http://localhost:8080/2010/01/pure-javascript-html5-canvas-to-animated-gif-conversion/</link>
+      <pubDate>Sat, 02 Jan 2010 23:53:25 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/2010/01/pure-javascript-html5-canvas-to-animated-gif-conversion/</guid>
+      <author></author>
+      <description>&lt;p&gt;Based on &lt;a href=&quot;http://code.google.com/p/as3gif/&quot;&gt;as3gif&lt;/a&gt; Ported by &lt;a href=&quot;http://antimatter15.com&quot;&gt;antimatter15&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/2010/jsgif/raw_canvas.png&quot; alt=&quot;This is the raw canvas element saved as a non-animated PNG&quot;&gt;
+&lt;img src=&quot;/articles/2010/jsgif/converted_animation.gif&quot; alt=&quot;This is the GIF which was generated from the canvas.&quot;&gt;
+&lt;img src=&quot;/articles/2010/jsgif/clock.gif&quot; alt=&quot;This is the GIF which was generated from the canvas.&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;AS3GIF lets you play and encode animated GIF’s with ActionScript 3&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Since web pages can usually natively play GIFs fine, it’s only a port of the GIFEncoder
+portions of the library.&lt;/p&gt;
+&lt;h1 id=&quot;basic-usage&quot;&gt;Basic Usage&lt;/h1&gt;
+&lt;p&gt;Since it pretty much &lt;em&gt;is&lt;/em&gt; GIFEncoder, you could consult the &lt;a href=&quot;http://code.google.com/p/as3gif/wiki/How_to_use#The_GIFEncoder&quot;&gt;as3gif how-to page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;But there are some differences so I’ll cover it here anyway.&lt;/p&gt;
+&lt;p&gt;You first need to include the JS files. It’s probably best if you include it in this order, but it shouldn’t matter too much.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='handlebars'&gt;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;LZWEncoder.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;javascript&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;NeuQuant.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;javascript&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;GIFEncoder.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;javascript&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you want to render the gif through an inline &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag or try to save to disk or send to server or anything that requires
+conversion into a non-binary string form, you should probably include &lt;code&gt;b64.js&lt;/code&gt; too.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='handlebars'&gt;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;b64.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;javascript&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Simple enough right? Now to convert stuff to GIF, you need to have a working &amp;lt;canvas&amp;gt; or at least some imageData-esque array.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='handlebars'&gt;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;canvas&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;bitmap&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;canvas&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;javascript&quot;&gt;
+  &lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; canvas = &lt;span class=&quot;hljs-built_in&quot;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&quot;hljs-string&quot;&gt;'bitmap'&lt;/span&gt;);
+  &lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; context = canvas.getContext(&lt;span class=&quot;hljs-string&quot;&gt;'2d'&lt;/span&gt;);
+  context.fillStyle = &lt;span class=&quot;hljs-string&quot;&gt;'rgb(255,255,255)'&lt;/span&gt;;
+  context.fillRect(&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;,canvas.width, canvas.height); &lt;span class=&quot;hljs-comment&quot;&gt;//GIF can't do transparent so do white&lt;/span&gt;
+
+  context.fillStyle = &lt;span class=&quot;hljs-string&quot;&gt;&quot;rgb(200,0,0)&quot;&lt;/span&gt;;  
+  context.fillRect (&lt;span class=&quot;hljs-number&quot;&gt;10&lt;/span&gt;, &lt;span class=&quot;hljs-number&quot;&gt;10&lt;/span&gt;, &lt;span class=&quot;hljs-number&quot;&gt;75&lt;/span&gt;, &lt;span class=&quot;hljs-number&quot;&gt;50&lt;/span&gt;);   &lt;span class=&quot;hljs-comment&quot;&gt;//draw a little red box&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now we need to init the GIFEncoder.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='coffeescript'&gt;&lt;/span&gt;  &lt;span class=&quot;hljs-reserved&quot;&gt;var&lt;/span&gt; encoder = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; GIFEncoder();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;If&lt;/em&gt; you are making an animated gif, you need to add the following&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='vhdl'&gt;&lt;/span&gt;  encoder.setRepeat(&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;); //&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;  -&amp;gt; &lt;span class=&quot;hljs-keyword&quot;&gt;loop&lt;/span&gt; forever
+                        //&lt;span class=&quot;hljs-number&quot;&gt;1&lt;/span&gt;+ -&amp;gt; &lt;span class=&quot;hljs-keyword&quot;&gt;loop&lt;/span&gt; n times &lt;span class=&quot;hljs-keyword&quot;&gt;then&lt;/span&gt; stop
+  encoder.setDelay(&lt;span class=&quot;hljs-number&quot;&gt;500&lt;/span&gt;); //go &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;next&lt;/span&gt; frame every n milliseconds
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now, you need to tell the magical thing that you’re gonna start inserting frames (even if it’s only one).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='dos'&gt;&lt;/span&gt;  encoder.&lt;span class=&quot;hljs-built_in&quot;&gt;start&lt;/span&gt;();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And for the part that took the longest to port: adding a real frame.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='vhdl'&gt;&lt;/span&gt;  encoder.addFrame(&lt;span class=&quot;hljs-keyword&quot;&gt;context&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In the GIFEncoder version, it accepts a Bitmap. Well, that doesn’t exist in Javascript (natively, anyway)
+so instead, I use what I feel is a decent analogue: the canvas context. However, if you’re in a situation
+where you don’t have a real &lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt; element. That’s &lt;em&gt;okay&lt;/em&gt;. You can set the second parameter to true and
+pass a imageData.data-esque array as your first argument. So in other words, you can do &lt;code&gt;encoder.addFrame(fake_imageData, true)&lt;/code&gt;
+as an alternative. However, you &lt;em&gt;must&lt;/em&gt; do an &lt;code&gt;encoder.setSize(width, height);&lt;/code&gt; before you do any of the addFrames if you
+pass a imageData.data-like array. If you pass a canvas context, then that’s all okay, because it will automagically do a 
+setSize with the canvas width/height stuff.&lt;/p&gt;
+&lt;p&gt;Now the last part is to finalize the animation and get it for display.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='coffeescript'&gt;&lt;/span&gt;  encoder.finish();
+  &lt;span class=&quot;hljs-reserved&quot;&gt;var&lt;/span&gt; binary_gif = encoder.stream().getData() &lt;span class=&quot;hljs-regexp&quot;&gt;//&lt;/span&gt;notice &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;is&lt;/span&gt; different from the as3gif package!
+  &lt;span class=&quot;hljs-reserved&quot;&gt;var&lt;/span&gt; data_url = &lt;span class=&quot;hljs-string&quot;&gt;'data:image/gif;base64,'&lt;/span&gt;+encode64(binary_gif);
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;docs&quot;&gt;Docs&lt;/h1&gt;
+&lt;p&gt;Each of the files exposes a single global (see, at least it’s considerate!). But since there’s three files, that means that 
+there’s three globals. But two of them are more of supporting libraries that I don’t totally understand or care about enough
+to document. So I’m just gonna document GIFEncoder.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;new GIFEncoder()&lt;/code&gt; This is super parent function. You really don’t need the &lt;code&gt;new&lt;/code&gt; keyword because It’s not really even using
+any special inheritance pattern. It’s a closure that does some &lt;code&gt;var blah = exports.blah = function blah(){&lt;/code&gt; for no good reason.
+Anyway, it returns an object with a bunch of methods that the section will be devoted to documenting. Note that I’ve never tested
+more than half of these, so good luck.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Boolean start()&lt;/code&gt; This writes the GIF Header and returns &lt;code&gt;false&lt;/code&gt; if it fails.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Boolean addFrame(CanvasRenderingContext2D context)&lt;/code&gt; This is the magical magic behind everything. This adds a frame.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Boolean addFrame(CanvasPixelArray image, true)&lt;/code&gt; This is the magical magic behind everything. This adds a frame. This time you need 
+you pass &lt;code&gt;true&lt;/code&gt; as the second argument and then magic strikes and it loads your canvas pixel array (which can be a real array, I dont
+care and I think the program has learned from my constant apathy to also not care). But note that if you do, you must first manually call
+&lt;code&gt;setSize&lt;/code&gt; which is happily defined just below this one.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;void setSize(width, height)&lt;/code&gt; Sets the canvas size. It’s supposed to be private, but I’m exposing it anyway. Gets called automagically
+as the size of the first frame if you don’t do that crappy hacky imageData.data hack.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;void setDelay(int milliseconds)&lt;/code&gt; the number of milliseconds to wait on each frame&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;void setDispose(int code)&lt;/code&gt; Sets the GIF frame disposal code for the last added frame and any
+subsequent frames. Default is 0 if no transparent color has been set, otherwise 2. I have no clue what this means so I just copypasted
+it from the actionscript docs.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;void setFrameRate(Number fps)&lt;/code&gt; Sets frame rate in frames per second. Equivalent to &lt;code&gt;setDelay(1000/fps)&lt;/code&gt;. I think that’s stupid.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;void setQuality(int quality)&lt;/code&gt; Sets quality of color quantization (conversion of images to the maximum 256 colors allowed by the 
+GIF specification). Lower values (minimum = 1) produce better colors, but slow processing significantly. 10 is the default, and produces 
+good color mapping at reasonable speeds. Values greater than 20 do not yield significant improvements in speed. BLAH BLAH BLAH. Whatever&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;void setRepeat(int iter)&lt;/code&gt; Sets the number of times the set of GIF frames should be played. Default is 1; 0 means play indefinitely. 
+Must be invoked before the first image is added.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;void setTransparent(Number color)&lt;/code&gt; Sets the transparent color for the last added frame and any subsequent
+frames. Since all colors are subject to modification in the quantization
+process, the color in the final palette for each frame closest to the given
+color becomes the transparent color for that frame. May be set to null to
+indicate no transparent color.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ByteArray finish()&lt;/code&gt; Adds final trailer to the GIF stream, if you don’t call the finish method the GIF stream will not be valid. &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;String stream()&lt;/code&gt; Yay the only function that returns a non void/boolean. It’s the magical stream function which should have been a getter which JS does
+support but I didnt’ feel like making it a getter because getters are so weird and inconsistent. Like sure there’s the nice pretty &lt;code&gt;get&lt;/code&gt; thing
+but I think IE9/8 doesn’t implement it because it’s non standard or something and replaced it with a hideously ugly blah blah. So Anyway, it’s a function.
+It returns a byteArray with three writeByte functions that you wouldn’t care about and a &lt;code&gt;getData()&lt;/code&gt; function which returns a binary string with the GIF.
+There’s also a &lt;code&gt;.bin&lt;/code&gt; attribute which contains an array with the binary stuff that I don’t care about.&lt;/p&gt;
+&lt;h1 id=&quot;webworkers&quot;&gt;WebWorkers&lt;/h1&gt;
+&lt;p&gt;The process isn’t really the fastest thing ever, so you should
+use WebWorkers for piecing together animations more than a few frames
+long.&lt;/p&gt;
+&lt;p&gt;I haven’t actually tried it yet, but here’s some incomplete mock-JS which
+should be able to do stuff once you add the boring stuff like serializing
+and deserializing the content (actually, i have most of the serializing done
+but you have to deserialize that and that’s really the boring part).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='javascript'&gt;&lt;/span&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; frame_index,
+    frame_length,
+    height, 
+    width,
+    imageData; &lt;span class=&quot;hljs-comment&quot;&gt;//get it from onmessage&lt;/span&gt;
+
+&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; encoder = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; GIFEncoder(); &lt;span class=&quot;hljs-comment&quot;&gt;//create a new GIFEncoder for every new job&lt;/span&gt;
+&lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt;(frame_index == &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;){
+  encoder.start();
+}&lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt;{
+  encoder.setProperties(&lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;); &lt;span class=&quot;hljs-comment&quot;&gt;//started, firstFrame&lt;/span&gt;
+}
+encoder.setSize(height, width);
+encoder.addFrame(imageData, &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;);
+&lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt;(frame_length == frame_index){
+  encoder.finish()
+}
+postMessage(frame_index + encoder.stream().getData()) &lt;span class=&quot;hljs-comment&quot;&gt;//on the page, search for the GIF89a to see the frame_index&lt;/span&gt;
+
+
+&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; animation_parts = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;hljs-built_in&quot;&gt;Array&lt;/span&gt;(frame_length);
+&lt;span class=&quot;hljs-comment&quot;&gt;//on the handler side:&lt;/span&gt;
+
+&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; worker = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; WebWorker(&lt;span class=&quot;hljs-string&quot;&gt;'blahblahblah.js'&lt;/span&gt;);
+worker.onmessage = &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(e)&lt;/span&gt;&lt;/span&gt;{
+  &lt;span class=&quot;hljs-comment&quot;&gt;//handle stuff, like get the frame_index&lt;/span&gt;
+  animation_parts[frame_index] = frame_data;
+  &lt;span class=&quot;hljs-comment&quot;&gt;//check when everything else is done and then do animation_parts.join('') and have fun&lt;/span&gt;
+}
+&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; imdata = context.getImageData(&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;,canvas.width,canvas.height)
+&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; len = canvas.width * canvas.height * &lt;span class=&quot;hljs-number&quot;&gt;4&lt;/span&gt;;
+&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; imarray = [];
+&lt;span class=&quot;hljs-keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; i = &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;; i &amp;lt; len; i++){
+  imarray.push(imdata[i]);
+}
+
+worker.postMessage(frame_index + &lt;span class=&quot;hljs-string&quot;&gt;';'&lt;/span&gt; + frame_length + &lt;span class=&quot;hljs-string&quot;&gt;';'&lt;/span&gt; + canvas.height + &lt;span class=&quot;hljs-string&quot;&gt;';'&lt;/span&gt; + canvas.width + &lt;span class=&quot;hljs-string&quot;&gt;';'&lt;/span&gt; + imarray.join(&lt;span class=&quot;hljs-string&quot;&gt;','&lt;/span&gt;))
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Javascript SHA1 and SHA256 in</title>

@@ -113,12 +113,10 @@ featured:
     type:
       - prototype
     caption: |
-            With an ordinary webcam pointed at any flat, semi-reflective surface, 
-            one can recover a finger's X and Y position with a perspective
-            projection, and Z by measuring the distance from a fingertip to its reflection. 
+            You can make any flat, semi-reflective surface into a multitouch tablet with nothing more than an ordinary webcam pointed at an angle. Critically, it's possible to extract 3D information from a scene captured by a 2D camera by measuring the distance between an object and its reflection about a known surface.
 
             ShinyTouch won 1st place at the Fairfax County Regional Science and Engineering Fair, and competed
-            at the Virginia State Science Fair. It was recognized by the Optical Society of America, the US Patent
+            at the Virginia State Science Fair. It was recognized by the Optical Society of America (where I recieved a book punnily titled _Optics Made Clear_), the US Patent
             Office and the IEEE. 
 
     description: |
@@ -303,7 +301,9 @@ featured:
     pic:
       - /img/projects/whammy.png
     caption: |
-              WebP is basically VP8's intraframe compression in an itsy-bitsy-yellow-polka-dot RIFF container. Weppy exploits video decoding capabilities to render WebP images, while Whammy exploits image encoding capability to encode WebM. 
+              WebP is basically VP8's intraframe compression in an itsy-bitsy-yellow-polka-dot RIFF container. 
+
+              Thus it's possible to use native WebM video decoding support to polyfill support for viewing WebP images, as well as the inverse— using a browser's WebP encoding capability to generate WebM videos.
 
     subprojects:
       - title: H.264 vs VP8
@@ -533,6 +533,7 @@ projects:
 
   - title: HeapQueue.JS
     sub: a simple priority queue in javascript
+    cat: heapqueue
     type:
       - library
     pic:
@@ -540,6 +541,7 @@ projects:
 
   - title: vX.JS
     sub: a javascript library that favors size over clarity
+    cat: vX JS
     type:
       - library
     # pic:
