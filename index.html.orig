@@ -1,0 +1,496 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="somewhere to talk about ideas and projects and stuff like everyone else">
+    <link rel="stylesheet" href="/style/main.css">
+  </head>
+  <body>
+    <div class="whitebox">
+      <div class="graybar top">
+        <header class="top">
+          <div class="slogan">somewhere to talk about random ideas and projects like everyone else</div><a href="/">
+            <h1 class="logo">
+              stuff
+               <span class="byline">by antimatter15</span>
+            </h1></a>
+        </header>
+      </div>
+      <div id="main">
+        <div class="sidebar">
+          <div class="about">
+            <p class="emph">
+              Hi. I’m <b>Kevin Kwok</b>, and I’m currently a sophomore at <b>MIT</b>, 
+              and this is my obligatory online presence or whatever.  
+            </p>
+            <p>
+              I regularly updated this site from 2007, when I started it in elementary school, 
+              to summer 2014, when it was unwittingly absorbed into an international phishing ring.
+            </p>
+            <p>
+              But like a phoenix, hydra or the national deficit, the site is back 
+              again bigger than ever (after a rather long gestation period).
+            </p>
+            <p>
+              For more obnoxious autobiographical content 
+              blended with bits of nostalgia for the old PHP-on-sketchy-free-webhosting days, click here.
+            </p>
+          </div><br>
+          <section class="archive"><a href="/archive">
+              <h2>Archive</h2></a>
+            <ul>
+              <li>
+                <ul>
+                  <li><a href="/2015/04"><span class="month">April</span> <span class="year">2015</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2014/05"><span class="month">May</span> <span class="year">2014</span></a></li>
+                  <li><a href="/2014/04"><span class="month">April</span> <span class="year">2014</span></a></li>
+                  <li><a href="/2014/03"><span class="month">March</span> <span class="year">2014</span></a></li>
+                  <li><a href="/2014/02"><span class="month">February</span> <span class="year">2014</span></a></li>
+                  <li><a href="/2014/01"><span class="month">January</span> <span class="year">2014</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2013/12"><span class="month">December</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/11"><span class="month">November</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/10"><span class="month">October</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/09"><span class="month">September</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/08"><span class="month">August</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/07"><span class="month">July</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/06"><span class="month">June</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/05"><span class="month">May</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/04"><span class="month">April</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/03"><span class="month">March</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/02"><span class="month">February</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/01"><span class="month">January</span> <span class="year">2013</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2012/12"><span class="month">December</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/11"><span class="month">November</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/10"><span class="month">October</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/09"><span class="month">September</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/08"><span class="month">August</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/07"><span class="month">July</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/06"><span class="month">June</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/05"><span class="month">May</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/04"><span class="month">April</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/03"><span class="month">March</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/02"><span class="month">February</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/01"><span class="month">January</span> <span class="year">2012</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2011/12"><span class="month">December</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/11"><span class="month">November</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/10"><span class="month">October</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/09"><span class="month">September</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/08"><span class="month">August</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/07"><span class="month">July</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/06"><span class="month">June</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/05"><span class="month">May</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/04"><span class="month">April</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/03"><span class="month">March</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/02"><span class="month">February</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/01"><span class="month">January</span> <span class="year">2011</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2010/12"><span class="month">December</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/11"><span class="month">November</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/10"><span class="month">October</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/09"><span class="month">September</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/08"><span class="month">August</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/07"><span class="month">July</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/06"><span class="month">June</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/05"><span class="month">May</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/04"><span class="month">April</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/03"><span class="month">March</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/02"><span class="month">February</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/01"><span class="month">January</span> <span class="year">2010</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2009/12"><span class="month">December</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/11"><span class="month">November</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/10"><span class="month">October</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/09"><span class="month">September</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/08"><span class="month">August</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/07"><span class="month">July</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/06"><span class="month">June</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/05"><span class="month">May</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/04"><span class="month">April</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/03"><span class="month">March</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/01"><span class="month">January</span> <span class="year">2009</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2008/12"><span class="month">December</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/11"><span class="month">November</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/10"><span class="month">October</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/09"><span class="month">September</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/08"><span class="month">August</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/07"><span class="month">July</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/06"><span class="month">June</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/05"><span class="month">May</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/04"><span class="month">April</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/01"><span class="month">January</span> <span class="year">2008</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2007/12"><span class="month">December</span> <span class="year">2007</span></a></li>
+                  <li><a href="/2007/11"><span class="month">November</span> <span class="year">2007</span></a></li>
+                  <li><a href="/2007/10"><span class="month">October</span> <span class="year">2007</span></a></li>
+                  <li><a href="/2007/09"><span class="month">September</span> <span class="year">2007</span></a></li>
+                  <li><a href="/2007/08"><span class="month">August</span> <span class="year">2007</span></a></li>
+                  <li><a href="/2007/05"><span class="month">May</span> <span class="year">2007</span></a></li>
+                </ul><br>
+              </li>
+            </ul>
+          </section>
+          <div class="tags">
+            <h2>Tags</h2><a href="/tag/3D" style="font-size: 15px">3D </a><a href="/tag/ajax" style="font-size: 19.998766054240136px">ajax </a><a href="/tag/ajax animator" style="font-size: 19.99983298578152px">ajax animator </a><a href="/tag/api" style="font-size: 15px">api </a><a href="/tag/apple" style="font-size: 19.93307149075715px">apple </a><a href="/tag/art" style="font-size: 12.689414213699951px">art </a><a href="/tag/awesome" style="font-size: 15px">awesome </a><a href="/tag/blog" style="font-size: 17.31058578630005px">blog </a><a href="/tag/browser" style="font-size: 19.93307149075715px">browser </a><a href="/tag/bugfix" style="font-size: 17.31058578630005px">bugfix </a><a href="/tag/canvas" style="font-size: 15px">canvas </a><a href="/tag/change" style="font-size: 17.31058578630005px">change </a><a href="/tag/chrome" style="font-size: 19.999999998973813px">chrome </a><a href="/tag/chrome extension" style="font-size: 12.689414213699951px">chrome extension </a><a href="/tag/chrome os" style="font-size: 12.689414213699951px">chrome os </a><a href="/tag/chromebook" style="font-size: 12.689414213699951px">chromebook </a><a href="/tag/code" style="font-size: 15px">code </a><a href="/tag/color" style="font-size: 12.689414213699951px">color </a><a href="/tag/colors" style="font-size: 12.689414213699951px">colors </a><a href="/tag/css" style="font-size: 12.689414213699951px">css </a><a href="/tag/demo" style="font-size: 12.689414213699951px">demo </a><a href="/tag/design" style="font-size: 18.807970779778824px">design </a><a href="/tag/elitist" style="font-size: 19.820137900379084px">elitist </a><a href="/tag/evil" style="font-size: 19.52574126822433px">evil </a><a href="/tag/experiment" style="font-size: 15px">experiment </a><a href="/tag/export" style="font-size: 12.689414213699951px">export </a><a href="/tag/extension" style="font-size: 19.820137900379084px">extension </a><a href="/tag/ExtJS" style="font-size: 19.820137900379084px">ExtJS </a><a href="/tag/facebook" style="font-size: 12.689414213699951px">facebook </a><a href="/tag/fast" style="font-size: 19.820137900379084px">fast </a><a href="/tag/features" style="font-size: 17.31058578630005px">features </a><a href="/tag/firefox" style="font-size: 19.975273768433652px">firefox </a><a href="/tag/flash" style="font-size: 18.807970779778824px">flash </a><a href="/tag/free" style="font-size: 12.689414213699951px">free </a><a href="/tag/function" style="font-size: 15px">function </a><a href="/tag/future" style="font-size: 17.31058578630005px">future </a><a href="/tag/GAE" style="font-size: 15px">GAE </a><a href="/tag/github" style="font-size: 17.31058578630005px">github </a><a href="/tag/google" style="font-size: 19.999999999999872px">google </a><a href="/tag/google code" style="font-size: 12.689414213699951px">google code </a><a href="/tag/google wave" style="font-size: 19.998766054240136px">google wave </a><a href="/tag/graphics" style="font-size: 15px">graphics </a><a href="/tag/hacking" style="font-size: 12.689414213699951px">hacking </a><a href="/tag/hosting" style="font-size: 19.52574126822433px">hosting </a><a href="/tag/html5" style="font-size: 19.52574126822433px">html5 </a><a href="/tag/idea" style="font-size: 15px">idea </a><a href="/tag/images" style="font-size: 12.689414213699951px">images </a><a href="/tag/internet exploder" style="font-size: 19.820137900379084px">internet exploder </a><a href="/tag/ipad" style="font-size: 18.807970779778824px">ipad </a><a href="/tag/javascript" style="font-size: 19.99999999721053px">javascript </a><a href="/tag/json" style="font-size: 17.31058578630005px">json </a><a href="/tag/library" style="font-size: 12.689414213699951px">library </a><a href="/tag/light" style="font-size: 12.689414213699951px">light </a><a href="/tag/lines" style="font-size: 15px">lines </a><a href="/tag/linux" style="font-size: 18.807970779778824px">linux </a><a href="/tag/login" style="font-size: 17.31058578630005px">login </a><a href="/tag/mac" style="font-size: 12.689414213699951px">mac </a><a href="/tag/magical" style="font-size: 17.31058578630005px">magical </a><a href="/tag/math" style="font-size: 12.689414213699951px">math </a><a href="/tag/meta" style="font-size: 12.689414213699951px">meta </a><a href="/tag/microsoft" style="font-size: 15px">microsoft </a><a href="/tag/microwave" style="font-size: 17.31058578630005px">microwave </a><a href="/tag/mirror" style="font-size: 12.689414213699951px">mirror </a><a href="/tag/multitouch" style="font-size: 15px">multitouch </a><a href="/tag/new" style="font-size: 19.52574126822433px">new </a><a href="/tag/nostalgia" style="font-size: 12.689414213699951px">nostalgia </a><a href="/tag/ocr" style="font-size: 12.689414213699951px">ocr </a><a href="/tag/offline" style="font-size: 18.807970779778824px">offline </a><a href="/tag/old" style="font-size: 18.807970779778824px">old </a><a href="/tag/onlypaths" style="font-size: 18.807970779778824px">onlypaths </a><a href="/tag/pi" style="font-size: 19.52574126822433px">pi </a><a href="/tag/processing" style="font-size: 12.689414213699951px">processing </a><a href="/tag/prototype" style="font-size: 15px">prototype </a><a href="/tag/python" style="font-size: 19.93307149075715px">python </a><a href="/tag/raphael" style="font-size: 19.52574126822433px">raphael </a><a href="/tag/release" style="font-size: 15px">release </a><a href="/tag/rewrite" style="font-size: 15px">rewrite </a><a href="/tag/security" style="font-size: 15px">security </a><a href="/tag/shiny" style="font-size: 19.975273768433652px">shiny </a><a href="/tag/ShinyTouch" style="font-size: 15px">ShinyTouch </a><a href="/tag/site" style="font-size: 15px">site </a><a href="/tag/small" style="font-size: 19.52574126822433px">small </a><a href="/tag/spam" style="font-size: 12.689414213699951px">spam </a><a href="/tag/speed" style="font-size: 12.689414213699951px">speed </a><a href="/tag/SVG" style="font-size: 17.31058578630005px">SVG </a><a href="/tag/touch" style="font-size: 15px">touch </a><a href="/tag/update" style="font-size: 19.999999943972036px">update </a><a href="/tag/upload" style="font-size: 18.807970779778824px">upload </a><a href="/tag/user interface" style="font-size: 12.689414213699951px">user interface </a><a href="/tag/vector" style="font-size: 15px">vector </a><a href="/tag/vectoreditor" style="font-size: 19.52574126822433px">vectoreditor </a><a href="/tag/version" style="font-size: 15px">version </a><a href="/tag/video" style="font-size: 17.31058578630005px">video </a><a href="/tag/vp8" style="font-size: 12.689414213699951px">vp8 </a><a href="/tag/vX JS" style="font-size: 19.52574126822433px">vX JS </a><a href="/tag/wave" style="font-size: 19.99999694097773px">wave </a><a href="/tag/webcam" style="font-size: 12.689414213699951px">webcam </a><a href="/tag/wikify" style="font-size: 19.820137900379084px">wikify </a><a href="/tag/wikipedia" style="font-size: 18.807970779778824px">wikipedia </a><a href="/tag/wordpress" style="font-size: 19.820137900379084px">wordpress </a>
+          </div>
+        </div>
+        <div id="content">
+          <div class="featured"><a href="/2015/04/blog-reboot/">
+              <h2>Blog Reboot <span class="subtitle">latest half-decent blog post, I hope</span></h2></a>
+            <div class="post">
+              <div class="pic"><img src="/articles/2015/Blog%20Reboot/2015-04-25.png">
+              </div>
+              <div class="text"><p></p>
+<p>This is still a work in&nbsp;progress.</p>
+</div>
+            </div>
+          </div>
+          <div class="splitter">
+            <hr><a href="/page/1">posts </a>
+          </div>
+          <div class="hand"><a href="/2014/05/perceptual-color-distance-and-rgb-and-l-a-b/">
+              <div class="thumb">
+                <div class="caption">
+                  <h2>CIEsmic Inflation</h2>
+                  <div class="sub">Perceptual color distance and RGB and L*a*b</div>
+                </div><img src="/articles/2014/CIEsmic%20Inflation/CIEsmic-Inflation1-1024x748.jpg">
+              </div></a><a href="/2014/04/project-naptha/">
+              <div class="thumb">
+                <div class="caption">
+                  <h2>Project Naptha</h2>
+                  <div class="sub">highlight, copy and translate text in images</div>
+                </div><img src="/articles/2014/Project%20Naptha/Screenshot-2014-04-24-02.56.29-1024x531.png">
+              </div></a><a href="/2014/03/unwarranted-speculation-on-oculus-vr/">
+              <div class="thumb">
+                <div class="caption">
+                  <h2>Oculus VR</h2>
+                  <div class="sub">Unwarranted Speculation On Oculus VR</div>
+                </div><img src="/articles/2014/Unwarranted%20Speculation%20On%20Oculus%20VR/oculus-rift-crystal-cove-100245805-orig_clipped_rev_2-300x237.png">
+              </div></a><a href="/2014/02/february-progress-report/">
+              <div class="thumb">
+                <div class="caption">
+                  <h2>February 2014</h2>
+                  <div class="sub">February Progress Report</div>
+                </div><img src="http://i.imgur.com/Bc0Zuq1.jpg">
+              </div></a><a href="/2014/01/heapqueue-js/">
+              <div class="thumb">
+                <div class="caption">
+                  <h2>HeapQueue.JS</h2>
+                  <div class="sub">Simple Javascript Priority Queue</div>
+                </div><img src="/articles/2014/HeapQueue.JS/heap-300x222.png">
+              </div></a><a href="/2013/12/ocrad-js-pure-javascript-ocr-via-emscripten/">
+              <div class="thumb">
+                <div class="caption">
+                  <h2>Ocrad.js</h2>
+                  <div class="sub">Ocrad.js Pure Javascript OCR via Emscripten</div>
+                </div><img src="/articles/2013/OCRAD.js%20Pure%20Javascript%20OCR%20via%20Emscripten/doge-300x191.png">
+              </div></a>
+          </div>
+          <div style="text-align:center" class="splitter">
+            <hr><a href="/projects">projects </a>
+          </div>
+          <div class="projects">
+            <div class="project"><a href="/project/project-naptha">
+                <h2>Project Naptha <span class="caption">highlight, copy and translate text from any image</span></h2></a>
+              <div class="cluster">
+                <div class="major"><a href="/project/project-naptha"><img src="img/projects/naptha.png"></a>
+                  <div class="caption"><p>Project Naptha started out as &quot;Images as Text&quot;
+the 2nd place winning entry to 2013&#39;s HackMIT Hackathon.</p>
+<p>It launched 5 months later, reaching 200,000 users in a week, 
+and was featured on the front page of Hacker News, Reddit,
+Engadget, Lifehacker, The Verge, and PCWorld.</p>
+</div>
+                </div>
+                <div class="subprojects"><a href="/project/ocrad-js" class="minor"><img src="img/projects/ocrad.png">
+                    <div class="caption">
+                      <h2>ocrad.js</h2> <span>optical character recognition in javascript with emscripten</span>
+                    </div></a><a href="/project/inpaint-js" class="minor"><img src="http://i.imgur.com/rwd8s1N.jpg">
+                    <div class="caption">
+                      <h2>inpaint.js</h2> <span>erase regions and objects from pictures in javascript</span>
+                    </div></a><a href="/project/phash-js" class="minor"><img src="http://i.imgur.com/rwd8s1N.jpg">
+                    <div class="caption">
+                      <h2>phash.js</h2> <span>perceptual hashing for content-based image retrieval in javascript</span>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="project"><a href="/project/ajax-animator">
+                <h2>Ajax Animator <span class="caption">create and share animations in the browser</span></h2></a>
+              <div class="cluster">
+                <div class="major"><a href="/project/ajax-animator"><img src="img/projects/ax.png"></a>
+                  <div class="caption"><p>Ajax Animator was probably my first large project— I started it after I had exhausted
+all the free trials of Macromedia Flash for making silly cartoons in 5th grade.</p>
+<p>As my primary focus from the latter half of 6th grade until my early sophomore year of high
+school, it evolved through many different iterations and spun off several smaller projects.</p>
+<p>I started by downloading Mark Finkle&#39;s RichDraw SVG/VML drawing component and pasted code
+snippets from various DHTML widget sites until I had something that looked vaguely like
+the Flash I knew. Over the years, as I&#39;ve learned more about programming, I&#39;ve rewritten the
+app several times— going from raw HTML and docment.write to DHTMLSuite to YUI/Ext to Ext 2.0.</p>
+<p>Ajax Animator has been featured on MakeUseOf, InfoQ, and has its own Wikipedia article.</p>
+</div>
+                </div>
+                <div class="subprojects"><a href="/project/scratchpad" class="minor"><img src="img/projects/scratch.png">
+                    <div class="caption">
+                      <h2>scratchpad</h2> <span>simple cross browser scratchpad used by Khan Academy</span>
+                    </div></a><a href="/project/stick2" class="minor"><img src="img/projects/stick2.png">
+                    <div class="caption">
+                      <h2>stick2</h2> <span>a simple skeleton based stop-motion stick figure animator</span>
+                    </div></a><a href="/project/jsgif" class="minor"><img src="img/projects/jsgif.png">
+                    <div class="caption">
+                      <h2>jsgif</h2> <span>a port of AS3GIF to generate animated gifs entirely in the browser</span>
+                    </div></a><a href="/project/jsvectoreditor" class="minor"><img src="img/projects/vectoreditor.png">
+                    <div class="caption">
+                      <h2>jsvectoreditor</h2> <span>cross browser vector graphics editor powered by RaphaelJS</span>
+                    </div></a><a href="/project/forkswif" class="minor"><img src="img/projects/forkswif.png">
+                    <div class="caption">
+                      <h2>forkswif</h2> <span>a simple prototype of an swf authoring tool in C# based on swfmill and svgpaint</span>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="project"><a href="/project/shinytouch">
+                <h2>ShinyTouch <span class="caption">zero-cost optical touchscreen retrofit</span></h2></a>
+              <div class="cluster">
+                <div class="major"><a href="/project/shinytouch"><img src="img/projects/shinytouch1.png"></a></div>
+                <div class="right"><a href="/project/shinytouch"><img src="img/projects/shinytouch2.png"><img src="img/projects/shinytouch3.png"><img src="img/projects/shinytouch4.png"></a>
+                  <div class="caption"><p>With an ordinary webcam pointed at any flat, semi-reflective surface, 
+one can recover a finger&#39;s X and Y position with a perspective
+projection, and Z by measuring the distance from a fingertip to its reflection. </p>
+<p>ShinyTouch won 1st place at the Fairfax County Regional Science and Engineering Fair, and competed
+at the Virginia State Science Fair. It was recognized by the Optical Society of America, the US Patent
+Office and the IEEE. </p>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="project"><a href="/project/protobowl">
+                <h2>Protobowl <span class="caption">real time multiplayer quizbowl game</span></h2></a>
+              <div class="cluster">
+                <div class="major"><a href="/project/protobowl"><img src="img/projects/pb.png"></a></div>
+                <div class="right"><a href="/project/protobowl"><img src="img/projects/pb1.png"><img src="img/projects/pb2.png"><img src="img/projects/pb3.png"></a>
+                  <div class="caption"><p>Protobowl is a real time website for competing with friends and strangers on trivia knowledge. 
+It runs both online and offline, and includes a database of over 90,000 questions comprised of
+Quizbowl, Jeopardy, Science Bowl and Certamen questions.</p>
+<p>With over a thousand daily players each staying for half hour on average, it eats a month of 
+humanity every day. Skynet would be proud.</p>
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="project"><a href="/project/cloud-save">
+                <h2>Cloud Save <span class="caption">one click save to any cloud storage locker</span></h2></a>
+              <div class="cluster">
+                <div class="major"><a href="/project/cloud-save"><img src="img/projects/cloudsave.png"></a>
+                  <div class="caption"><p>Cloud Save featured on Lifehacker, MakeUseOf, TheNextWeb, GHacks.net, HowToGeek, MacWorld, ComputerWorld, ITWorld.</p>
+<p>Surplus featured on Business Insider, Lifehacker, TheNextWeb, MakeUseOf.</p>
+<p>Drag2Up featured on Techcrunch, CNet, Lifehacker.</p>
+</div>
+                </div>
+                <div class="subprojects"><a href="/project/surplus" class="minor"><img src="img/projects/surplus.png">
+                    <div class="caption">
+                      <h2>Surplus</h2> <span>Google+ notifications integration with Google Chrome</span>
+                    </div></a><a href="/project/drag2up" class="minor"><img src="img/projects/drag2up.png">
+                    <div class="caption">
+                      <h2>Drag2Up</h2> <span>drag and drop files from your desktop onto any text field to automatically upload and share</span>
+                    </div></a><a href="/project/cloudfall" class="minor"><img src="img/projects/cloudfall.png">
+                    <div class="caption">
+                      <h2>CloudFall</h2> <span>sublime-like text editor with dropbox sync</span>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="project"><a href="/project/offline-wiki">
+                <h2>Offline Wiki <span class="caption">browse the full text of wikipedia offline</span></h2></a>
+              <div class="cluster">
+                <div class="major"><a href="/project/offline-wiki"><img src="img/projects/wiki.png"></a>
+                  <div class="caption"><p>In middle school, I had an iPhone— but it didn&#39;t actually have cell service, which led to more than a few expeditions for the fabled WiFi.
+My favorite app was Patrick Collison&#39;s <a href="http://web.archive.org/web/20080913191907/http://collison.ie/wikipedia-iphone/">Encyclopedia</a>,
+which contained the full compressed contents of the English Wikipedia. It left a powerful impression on me—
+I felt the true power of a real-life Hitchhiker&#39;s Guide.</p>
+</div>
+                </div>
+                <div class="subprojects"><a href="/project/project-wikify" class="minor"><img src="img/projects/wikify.png">
+                    <div class="caption">
+                      <h2>Project Wikify</h2> <span>edit any website and share changes</span>
+                    </div></a><a href="/project/offline-dictionary" class="minor"><img src="img/projects/dict.png">
+                    <div class="caption">
+                      <h2>Offline Dictionary</h2> <span>look up words and definitions on Wiktionary</span>
+                    </div></a><a href="/project/bzip2-js" class="minor"><img src="img/projects/bzip.png">
+                    <div class="caption">
+                      <h2>bzip2.js</h2> <span>a port of some bzip2 decompressor to javascript</span>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="project"><a href="/project/icosahedron">
+                <h2>Icosahedron <span class="caption">contrary to popular belief, this is in fact not a dodecahedron</span></h2></a>
+              <div class="cluster">
+                <div class="major"><a href="/project/icosahedron"><img src="img/projects/ico.jpg"></a>
+                  <div class="caption"></div>
+                </div>
+                <div class="subprojects"><a href="/project/dorm-weather" class="minor"><img src="img/projects/weather.jpg">
+                    <div class="caption">
+                      <h2>Dorm Weather</h2> <span>the art of collecting data and totally forgetting about it</span>
+                    </div></a><a href="/project/droste-dorm" class="minor"><img src="img/projects/droste.jpg">
+                    <div class="caption">
+                      <h2>Droste Dorm</h2> <span>a poster on my wall, of my wall, featuring a particular poster
+</span>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="project"><a href="/project/whammy">
+                <h2>Whammy <span class="caption">a real time intraframe WebM encoder in javascript</span></h2></a>
+              <div class="cluster">
+                <div class="major"><a href="/project/whammy"><img src="img/projects/whammy.png"></a>
+                  <div class="caption"><p>WebP is basically VP8&#39;s intraframe compression in an itsy-bitsy-yellow-polka-dot RIFF container. Weppy exploits video decoding capabilities to render WebP images, while Whammy exploits image encoding capability to encode WebM. </p>
+</div>
+                </div>
+                <div class="subprojects"><a href="/project/h-264-vs-vp8" class="minor"><img src="img/projects/vp8.png">
+                    <div class="caption">
+                      <h2>H.264 vs VP8</h2> <span>the (mostly wrong) ambiguity of &quot;open&quot; and video codecs</span>
+                    </div></a><a href="/project/weppy" class="minor"><img src="img/projects/weppy.png">
+                    <div class="caption">
+                      <h2>Weppy</h2> <span>lightweight polyfill for WebP images in modern browsers today</span>
+                    </div></a><a href="/project/chromecorder" class="minor"><img src="http://i.imgur.com/rwd8s1N.jpg">
+                    <div class="caption">
+                      <h2>Chromecorder</h2> <span>create screencasts and export them as WebM or a single compressed PNG</span>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="project"><a href="/project/musicalpha">
+                <h2>MusicAlpha <span class="caption">reverse-engineered Google Music uploader</span></h2></a>
+              <div class="cluster">
+                <div class="major"><a href="/project/musicalpha"><img src="img/projects/musicalpha.png"></a>
+                  <div class="caption"><p>For a long time, Google Music could only upload songs with a proprietary
+uploader that only ran on Mac OS and Windows. With a bit (literally) of 
+IDA Pro twiddling, it&#39;s possible to dump and reverse-engineer the 
+protobufs that get sent to the server to negotiate file uploading.</p>
+<p>MusicAlpha is a prototype of a cross-platform implementation of the uploader
+as a Chrome app.</p>
+</div>
+                </div>
+                <div class="subprojects"><a href="/project/player" class="minor"><img src="img/projects/player.png">
+                    <div class="caption">
+                      <h2>player</h2> <span>probably the first browser based mp3 player which could load local files</span>
+                    </div></a><a href="/project/exfm-extras" class="minor"><img src="img/projects/exfm.png">
+                    <div class="caption">
+                      <h2>ExFM Extras</h2> <span>an extension to an extension to read ID3v2 metadata when importing music</span>
+                    </div></a><a href="/project/js-id3v2" class="minor"><img src="img/projects/id3.png">
+                    <div class="caption">
+                      <h2>JS ID3v2</h2> <span>a javascript library for reading ID3 tags from MP3 files</span>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="project"><a href="/project/microwave">
+                <h2>Microwave <span class="caption">mobile-friendly google wave client</span></h2></a>
+              <div class="cluster">
+                <div class="major"><a href="/project/microwave"><img src="img/projects/microwave.png"></a>
+                  <div class="caption"><p>I spent the first year of high school mildly obsessed with Google Wave. 
+To be fair, I still think it&#39;s pretty cool— but apparently that opinion
+was a minority one. </p>
+<p>One problem was that they had tried to replace everything— email,
+instant messaging, google docs, mailing lists and web pages— 
+severing their ties with the outside world. Everything was contained
+within a bloated operating-system of a web app.</p>
+<p>Microwave was the first real third party Google Wave client. Wave Reader 
+uses Microwave&#39;s core (magnetron?) to to publish waves as plain web pages. </p>
+</div>
+                </div>
+                <div class="subprojects"><a href="/project/wave-reader" class="minor"><img src="img/projects/wavereader.png">
+                    <div class="caption">
+                      <h2>Wave Reader</h2> <span>publish waves to the web with anonymous commenting and embedded gadgets</span>
+                    </div></a><a href="/project/word-association" class="minor"><img src="img/projects/graph.png">
+                    <div class="caption">
+                      <h2>Word Association</h2> <span>a simple wave gadget for collaboratively building simple mindmaps</span>
+                    </div></a><a href="/project/awesomeness" class="minor"><img src="img/projects/awesomeness.png">
+                    <div class="caption">
+                      <h2>Awesomeness</h2> <span>a prototype of a federated real-time hierarchical messaging system</span>
+                    </div></a><a href="/project/comet-rpg" class="minor"><img src="img/projects/gaem.png">
+                    <div class="caption">
+                      <h2>Comet RPG</h2> <span>an online multiplayer rpg from middle school</span>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="project"><a href="/project/facebook-clock">
+                <h2>Facebook Clock <span class="caption">visualizing when friends are active on facebook</span></h2></a>
+              <div class="cluster">
+                <div class="major"><a href="/project/facebook-clock"><img src="img/projects/faceclock.jpg"></a>
+                  <div class="caption"><p>Everyone has a bit of a daily rhythm, which often for better or worse includes scattered visitations of Facebook. I wrote a simple script which polled the Graph API every minute for a list of online friends. Each ring in the chart represents a single friend&#39;s 24 hour Facebook routine with centrality indicating total time spent. To the extent that you are your group of friends, this could be thought of as a sort of sociotemporal fingerprint. </p>
+</div>
+                </div>
+                <div class="subprojects"><a href="/project/schedule-compare" class="minor"><img src="img/projects/sched.png">
+                    <div class="caption">
+                      <h2>Schedule Compare</h2> <span>discover classmates automatically by parsing facebook status updates</span>
+                    </div></a><a href="/project/chat-bot" class="minor"><img src="img/projects/collatz.png">
+                    <div class="caption">
+                      <h2>Chat Bot</h2> <span>turing complete collatz tag code over facebook chat</span>
+                    </div></a><a href="/project/activity-plot" class="minor"><img src="img/projects/face.png">
+                    <div class="caption">
+                      <h2>Activity Plot</h2> <span>a small experiment graphing historical profile information</span>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function squish(){
+        document.getElementById("squishfoot").className += "squish"
+      }
+    </script>
+    <style>
+      .squish { font-size: 9px }
+      .squishsquish { font-size: 8px }
+      .squishsquishsquish { font-size: 7px }
+      .squishsquishsquishsquish { font-size: 6px }
+      .squishsquishsquishsquishsquish { font-size: 5px }
+      .squishsquishsquishsquishsquishsquish { font-size: 4px }
+      .squishsquishsquishsquishsquishsquishsquish { visibility: hidden }
+    </style>
+    <div class="graybar bottom">
+      <footer>
+        <div id="squishfoot">I'm a tiny footer, please don't <a href="javascript:squish()">squish</a> me</div>
+      </footer>
+    </div>
+  </body>
+</html>
+=======
+<meta http-equiv="refresh" content="0; url=wp">
+>>>>>>> 82aacd32fa395824c958b66bbbddfa7baf4f75e4
