@@ -165,32 +165,30 @@
           </div>
         </div>
         <div id="content">
-          <h1>#macbook</h1>
+          <h1>#slow</h1>
           <article class="article intro">
             <header>
-              <h2><a href="/2013/02/swipe-gesture-2/">Swipe Gesture 2</a> <span class="subtitle">08 February 2013</span></h2>
+              <h2><a href="/2015/04/blog-reboot/">Blog Reboot</a> <span class="subtitle">11 April 2015</span></h2>
             </header>
-            <section class="content"><p><a href="https://chrome.google.com/webstore/detail/mgegfjnccpnkdppohmfgnjalkediapkc"><img src="/articles/2013/Swipe%20Gesture%202/Swipe2-e1345249041313.png" alt="" title="Swipe2"></a></p>
-<p>I’ve actually had this post fermenting in my blog’s draft folder since at least September, but I never actually got around to finishing the post. And now that Google’s enabling the new swipe-to-go-back by default on the dev channel versions of Chrome <span class="caps">OS</span>, it finally feels like the right time to post. As in, I feel like posting things right when they’re soon to be absolutely useless (Which, you might recall, was the case with my Google Wave client, which started selling on the App Store the day Google announced that Wave would be phased out and eventually shut&nbsp;down).</p>
-<p>So, a few months ago, I finished my update to the<a href="https://chrome.google.com/webstore/detail/swipe-gesture/mgegfjnccpnkdppohmfgnjalkediapkc?hl=en-US"> Swipe Gesture </a>extension, which featured a rather significant redesign. It supported multiple gesture directions and a fancy animated element to indicate the direction of the&nbsp;gesture.</p>
+            <section class="content"><p><img src="/articles/2015/Blog%20Reboot/2015-04-25.png" alt="this blog"></p>
+<p>This is my contribution to the world’s annals of websites “in progress” in perpetuity. I’ve been working on this blog reboot for nearly a year at this point (rest assured, I haven’t worked on it for any appreciable fraction of that time— but it’s nonetheless traumatizing for me as “blog posts written” is my primary metric for personal&nbsp;productivity). </p>
+<p>There’s still a lot left to be done, but right now it should be in a more or less functional and navigable state. I’ve just added image thumbnailing (so this homepage shouldn’t take a triassic aeon to load anymore), which seems like an addition substantial-enough to warrant some new words adorning the featured post&nbsp;callout.</p>
 
             </section>
           </article>
           <hr>
           <article class="article intro">
             <header>
-              <h2><a href="/2012/08/swipe-gesture-2-development/">Swipe Gesture 2 Development</a> <span class="subtitle">16 August 2012</span></h2>
+              <h2><a href="/2010/01/javascript-sha1-and-sha256-in/">Javascript SHA1 and SHA256 in</a> <span class="subtitle">03 January 2010</span></h2>
             </header>
-            <section class="content"><p><a href="/articles/2012/Swipe%20Gesture%202%20Development/4WsjX.png"><img src="/articles/2012/Swipe%20Gesture%202%20Development/4WsjX.png" alt="" title="4WsjX"></a></p>
-<p>So I’m trying something new, returning to quasi-daily somewhat short updates about the development of whatever I’m working on rather than withholding everything until something of somewhat acceptable release quality is achieved. I have a blog post about that transition, but I’m still working on it (as in, writing it is somewhat boring). It’s probably better given my development cycle is quite nonlinear, usually I get something somewhat promising made in the first few days or so and pause for long and possibly indefinite durations doing other stuff in the process. Probably, writing short blog posts about what I have yet to finish will remind me to, well, finish them. Just maybe. But I’m probably going to have to preface every post that I write with this kind of disclaimer until I actually get that post finished and published so I have something to reference rather than pointing crazily into the air and saying “oh yeah, it’s coming, now, someday,&nbsp;maybe.”.</p>
-<p>Starting about yesterday, I started working on the successor to Swipe Gesture. The new version tries to mimic the actual behavior of Chrome on Lion, which I think is really quite cool. Here’s a <a href="http://www.youtube.com/watch?v=H-LY6-UdtO8">video I found on YouTube</a> which shows how it basically looks like if you aren’t familiar with it. The first thing to notice that it’s substantially less trivial, code-wise. No more is it a 30-line software lightweight, but it’s not _too _complex and arcane to forbid any kind of comprehension. Now, the simple prototype of its functionality is already nearing 300 lines of&nbsp;code.</p>
-<p><a href="/articles/2012/Swipe%20Gesture%202%20Development/Screenshot-from-2012-08-14-111944.png"><img src="/articles/2012/Swipe%20Gesture%202%20Development/Screenshot-from-2012-08-14-111944-150x150.png" alt="" title="Screenshot from 2012-08-14 11:19:44"></a></p>
-<p>Another big difference is now it’s no longer designed strictly for Chromebooks. In fact, one of the reasons for starting this was that I was informed that the kind of functionality might be useful on Macbooks running Windows via Bootcamp. In fact, it’s meant to be as general as possible, to work on pretty much any kind of platform. And it’s not even bound strictly to the horizontal axis: the code is meant to work with linear swipes in any direction including diagonally (although some experimentation on my chromebook seems to indicate that swiping at angles isn’t terribly&nbsp;useful).</p>
-<p>The most significant conceptual change is the transition between a speed/acceleration metric to a distance metric. That is, in the old version, an action was triggered when there was a swipe in one direction vigorous enough to be considered. This was a fairly simple way to avoid the problem of distinguishing between a horizontal scroll action and a swipe by not making a distinction. In a sense, cheating. The new version instead does things “the right way™” by observing events carefully to determine if a swiping action actually results in scrolling. If that’s your kind of thing, the technical nitty gritty details have their own <a href="http://antimatter15.com/wp/2012/08/determining-if-a-mousewheel-event-results-in-scroll/">dedicated blog post</a>, so feel free to click through if you’re&nbsp;interested.</p>
-<p>Once it’s determined that that scroll thing is actually probably a swipe gesture, it renders a nice little arrow in canvas. I considered using a unicode arrow and setting the font to huge, but that didn’t turn out quite as well as I expected (plus, it makes rotations and interactions with the embedding page <span class="caps">CSS</span> a little less&nbsp;predictable).</p>
-<p>Also another thing is that it turns out that it’s a bad idea to set a css transition on something which is meant to hook with mouse or scroll movements because, while this ends up smoothing things out (which is good for mouse wheels because they click to the nearest 120 magical click units) it ends up producing a significant amount of lag and just feels so&nbsp;awkward.</p>
-<p><a href="/articles/2012/Swipe%20Gesture%202%20Development/Swipe2.png"><img src="/articles/2012/Swipe%20Gesture%202%20Development/Swipe2-150x150.png" alt="" title="Swipe2"></a></p>
-<p>Another thing (since this post is written over the course of several days, and the actual update has already been published at time of writing) is the cool redesign of the Settings page. The first thing to notice is that the settings page for once actually has settings, which is quite an accomplishment by itself. Also, it has a visual refresh that makes it look somewhat bootstrap-esque. That’s because ever since using Bootstrap in the making of Protobowl (a rather big project that I have yet to blog about), I’ve pretty much fallen in love with the color <code>whiteSmoke</code>. Partly because it has a name, which means I don’t have to google it or tattoo it on my arm for a mnemonic’s sake, and also because it’s a pretty nice&nbsp;color.</p>
+            <section class="content"><p>Not sure why I made this, but here’s some super tiny implementation of some cryptographic functions. There are some optimizations made for size rather than speed (especially with <span class="caps">SHA256</span>), for instance, there are some 71 constants which are used in SHA256 which in most implementations are stored precomputed (they take up around 1KB in hexadecimal), but with mine, they are computed at runtime, which adds a significant runtime penalty, taking twice as long as comparable implementations. It should also be noted that it doesn’t do any UTF8 encoding that some other implementations do, but it can be added by UTF8 encoding the text before running it through the&nbsp;functions.</p>
+<p><span class="caps">SHA1</span></p>
+<script type="text/javascript" src="http://gist.github.com/267720.js"></script>
+
+<p><span class="caps">SHA256</span></p>
+<script type="text/javascript" src="http://gist.github.com/268113.js"></script>
+
+<p><span class="caps">MIT</span> licensed, but please post a comment if you plan on using&nbsp;it.</p>
 
             </section>
           </article>
