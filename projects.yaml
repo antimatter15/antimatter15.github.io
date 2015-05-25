@@ -5,7 +5,7 @@ featured:
     type:
       - extension
     pic:
-      - img/projects/naptha.png
+      - /img/projects/naptha.png
     caption:  |
               Project Naptha started out as "Images as Text"
               the 2nd place winning entry to 2013's HackMIT Hackathon.
@@ -19,7 +19,7 @@ featured:
       - title: ocrad.js
         cat: Ocrad.js
         pic:
-          - img/projects/ocrad.png
+          - /img/projects/ocrad.png
         type:
           - library
         sub: optical character recognition in javascript with emscripten
@@ -39,7 +39,7 @@ featured:
     type:
       - web app
     pic:
-      - img/projects/ax.png
+      - /img/projects/ax.png
     caption:  |
               Ajax Animator was probably my first large project— I started it after I had exhausted
               all the free trials of Macromedia Flash for making silly cartoons in 5th grade.
@@ -69,7 +69,7 @@ featured:
     subprojects:
       - title: scratchpad
         pic:
-        - img/projects/scratch.png
+        - /img/projects/scratch.png
         type:
           - library
         sub: simple cross browser scratchpad used by Khan Academy
@@ -80,36 +80,36 @@ featured:
           - web app
         sub: a simple skeleton based stop-motion stick figure animator
         pic:
-          - img/projects/stick2.png
+          - /img/projects/stick2.png
       - title: jsgif
         type:
           - library
         sub: a port of AS3GIF to generate animated gifs entirely in the browser
         pic:
-          - img/projects/jsgif.png
+          - /img/projects/jsgif.png
       - title: jsvectoreditor
         cat: VectorEditor
         type:
           - library
         sub: cross browser vector graphics editor powered by RaphaelJS
         pic:
-          - img/projects/vectoreditor.png
+          - /img/projects/vectoreditor.png
       - title: forkswif
         cat: ForkSwif
         type:
           - desktop app
         sub: a simple prototype of an swf authoring tool in C# based on swfmill and svgpaint
         pic:
-          - img/projects/forkswif.png
+          - /img/projects/forkswif.png
 
   - title: ShinyTouch
     cat: ShinyTouch
     sub: zero-cost optical touchscreen retrofit
     pic:
-      - img/projects/shinytouch1.png
-      - img/projects/shinytouch2.png
-      - img/projects/shinytouch3.png
-      - img/projects/shinytouch4.png
+      - /img/projects/shinytouch1.png
+      - /img/projects/shinytouch2.png
+      - /img/projects/shinytouch3.png
+      - /img/projects/shinytouch4.png
     type:
       - prototype
     caption: |
@@ -144,10 +144,10 @@ featured:
     type:
       - web app
     pic:
-          - img/projects/pb.png
-          - img/projects/pb1.png
-          - img/projects/pb2.png
-          - img/projects/pb3.png
+          - /img/projects/pb.png
+          - /img/projects/pb1.png
+          - /img/projects/pb2.png
+          - /img/projects/pb3.png
     caption: |
               Protobowl is a real time website for competing with friends and strangers on trivia knowledge. 
               It runs both online and offline, and includes a database of over 90,000 questions comprised of
@@ -161,7 +161,7 @@ featured:
     type:
       - extension
     pic:
-          - img/projects/cloudsave.png
+          - /img/projects/cloudsave.png
     caption: |
               Cloud Save featured on Lifehacker, MakeUseOf, TheNextWeb, GHacks.net, HowToGeek, MacWorld, ComputerWorld, ITWorld.
 
@@ -178,7 +178,7 @@ featured:
         type:
           - extension
         pic:
-          - img/projects/surplus.png
+          - /img/projects/surplus.png
 
       - title: Drag2Up
         cat: drag2up
@@ -186,7 +186,7 @@ featured:
         type:
           - extension
         pic:
-          - img/projects/drag2up.png
+          - /img/projects/drag2up.png
 
       - title: CloudFall
         cat: CloudFall
@@ -194,7 +194,7 @@ featured:
         type:
           - chrome app
         pic:
-          - img/projects/cloudfall.png
+          - /img/projects/cloudfall.png
         caption: |
                   In 2012, my brother and I were headed to San Fransisco (for my first time!) to attend
                   the Google I/O conference. I heard that the flight was some ridiculous 6 hours long,
@@ -206,7 +206,7 @@ featured:
       # - title: CrOS Save
       #   sub: easily upload files from the Chrome OS file manager to any cloud storage provider
       #   pic:
-      #     - img/projects/crossave.png
+      #     - /img/projects/crossave.png
 
   - title: Offline Wiki
     cat: Offline Wiki
@@ -214,7 +214,7 @@ featured:
     type:
       - web app
     pic:
-      - img/projects/wiki.png
+      - /img/projects/wiki.png
     caption:  |
               In middle school, I had an iPhone— but it didn't actually have cell service, which led to more than a few expeditions for the fabled WiFi.
               My favorite app was Patrick Collison's [Encyclopedia](http://web.archive.org/web/20080913191907/http://collison.ie/wikipedia-iphone/),
@@ -229,14 +229,14 @@ featured:
         type:
           - extension
         pic:
-          - img/projects/wikify.png
+          - /img/projects/wikify.png
 
       - title: Offline Dictionary
         sub: look up words and definitions on Wiktionary
         type:
           - extension
         pic:
-          - img/projects/dict.png
+          - /img/projects/dict.png
         caption: |
                   This is something which just does a lot of things.
       # - title: js-wikireader
@@ -245,13 +245,13 @@ featured:
       # - title: py-wikireader
       #   sub: load dumps of wikipedia in python
       #   pic:
-      #     - img/projects/pywiki.png
+      #     - /img/projects/pywiki.png
 
       - title: bzip2.js
         type:
           - library
         pic:
-          - img/projects/bzip.png
+          - /img/projects/bzip.png
         sub: a port of some bzip2 decompressor to javascript
 
 
@@ -260,7 +260,7 @@ featured:
     type:
       - art
     pic:
-      - img/projects/ico.jpg
+      - /img/projects/ico.jpg
     caption: |
     subprojects:
       - title: Dorm Weather
@@ -268,7 +268,7 @@ featured:
         type:
           - iot
         pic:
-          - img/projects/weather.jpg
+          - /img/projects/weather.jpg
 
 
       - title: Droste Dorm
@@ -277,7 +277,7 @@ featured:
         sub: |
               a poster on my wall, of my wall, featuring a particular poster
         pic:
-          - img/projects/droste.jpg
+          - /img/projects/droste.jpg
 
       - title: Auto Scan
         featured: false
@@ -285,7 +285,7 @@ featured:
           - iot
         sub: automatically scan documents on lid close using arduino
         pic:
-          - img/projects/scan.jpg
+          - /img/projects/scan.jpg
 
       - title: LIFX + Music
         featured: false
@@ -293,7 +293,7 @@ featured:
           - art
         sub: moozik
         pic:
-          - img/projects/lifx.png
+          - /img/projects/lifx.png
 
   - title: Whammy
     cat: Whammy
@@ -301,7 +301,7 @@ featured:
     type:
       - library
     pic:
-      - img/projects/whammy.png
+      - /img/projects/whammy.png
     caption: |
               WebP is basically VP8's intraframe compression in an itsy-bitsy-yellow-polka-dot RIFF container. Weppy exploits video decoding capabilities to render WebP images, while Whammy exploits image encoding capability to encode WebM. 
 
@@ -311,7 +311,7 @@ featured:
         type:
           - blog
         pic:
-          - img/projects/vp8.png
+          - /img/projects/vp8.png
         caption:  |
                   When Google acquired the video compression company On2 and released their flagship codec
                   VP8 open source and royalty-free, there was lots of controversy over whether or not H.264
@@ -321,13 +321,13 @@ featured:
       # - title: Whammy
       #   sub: a real time javascript intraframe WebM encoder powered by a WebP canvas hack
       #   pic:
-      #     - img/projects/whammy.png
+      #     - /img/projects/whammy.png
       - title: Weppy
         type:
           - library
         sub: lightweight polyfill for WebP images in modern browsers today
         pic:
-          - img/projects/weppy.png
+          - /img/projects/weppy.png
       # - title: js-ebml
       #   sub: an implementation of the Matroska EBML container format
 
@@ -345,7 +345,7 @@ featured:
     type:
       - chrome app
     pic:
-          - img/projects/musicalpha.png
+          - /img/projects/musicalpha.png
     caption:  |
               For a long time, Google Music could only upload songs with a proprietary
               uploader that only ran on Mac OS and Windows. With a bit (literally) of 
@@ -361,7 +361,7 @@ featured:
         type:
           - web app
         pic:
-          - img/projects/player.png
+          - /img/projects/player.png
         caption: | 
                   This used the new `<input type="file" directory>` feature to load entire directories from the local computer. It uses `FileReader` and JSID3v2 in order to read song metadata. 
 
@@ -373,19 +373,19 @@ featured:
         type:
           - extension
         pic:
-          - img/projects/exfm.png
+          - /img/projects/exfm.png
 
       - title: JS ID3v2
         sub: a javascript library for reading ID3 tags from MP3 files
         type:
           - library
         pic:
-          - img/projects/id3.png
+          - /img/projects/id3.png
 
       # - title: google-music-protocol
       #   sub: reverse-engineered documentation for the google music upload protocol
       #   pic:
-      #     - img/projects/gmusic.png
+      #     - /img/projects/gmusic.png
 
   - title: Microwave
     sub: mobile-friendly google wave client
@@ -393,7 +393,7 @@ featured:
     type:
       - wave
     pic:
-          - img/projects/microwave.png
+          - /img/projects/microwave.png
     caption:  |
               I spent the first year of high school mildly obsessed with Google Wave. 
               To be fair, I still think it's pretty cool— but apparently that opinion
@@ -414,7 +414,7 @@ featured:
           - wave
         featured: false
         pic:
-          - img/projects/waveembed.png
+          - /img/projects/waveembed.png
 
       - title: Tsunami
         sub: a gadget that crashes google wave
@@ -423,33 +423,33 @@ featured:
         caption: mentioned by xkcd!
         featured: false
         pic:
-          - img/projects/tsunami.png
+          - /img/projects/tsunami.png
 
       - title: Wave Reader
         sub: publish waves to the web with anonymous commenting and embedded gadgets
         type:
           - web app
         pic:
-          - img/projects/wavereader.png
+          - /img/projects/wavereader.png
 
       - title: Word Association
         sub: a simple wave gadget for collaboratively building simple mindmaps
         type:
           - wave
         pic:
-          - img/projects/graph.png
+          - /img/projects/graph.png
 
       # - title: pywavereader
       #   sub: a reverse-engineered desktop wave reader
       #   pic:
-      #     - img/projects/pywave.png
+      #     - /img/projects/pywave.png
 
       - title: Awesomeness
         type:
           - wave
         sub: a prototype of a federated real-time hierarchical messaging system
         pic:
-          - img/projects/awesomeness.png
+          - /img/projects/awesomeness.png
 
       - title: Comet RPG
         sub: an online multiplayer rpg from middle school
@@ -457,7 +457,7 @@ featured:
         type:
           - game
         pic:
-          - img/projects/gaem.png
+          - /img/projects/gaem.png
         caption: |
                  This is by no means a good game, it's mostly not even fun. For a middle school game design competition, I decided to build a real time online mmorpg of sorts. It was inspired by PSPRPG, which was essentially the one of the first projects that got me into programming. 
 
@@ -472,28 +472,28 @@ featured:
     type:
       - art
     pic:
-      - img/projects/faceclock.jpg
+      - /img/projects/faceclock.jpg
     subprojects:
       - title: Schedule Compare
         type:
           - web app
         sub: discover classmates automatically by parsing facebook status updates
         pic:
-          - img/projects/sched.png
+          - /img/projects/sched.png
 
       - title: Chat Bot
         type:
           - experiment
         sub: turing complete collatz tag code over facebook chat
         pic:
-          - img/projects/collatz.png
+          - /img/projects/collatz.png
 
       - title: Activity Plot
         sub: a small experiment graphing historical profile information
         type:
           - experiment
         pic:
-          - img/projects/face.png
+          - /img/projects/face.png
 
 projects:
   - title: Swipe Gesture
@@ -501,49 +501,49 @@ projects:
     type:
       - extension
     pic:
-      - img/projects/swipegesture.png
+      - /img/projects/swipegesture.png
 
   - title: Pandora's Box
     sub: modifying the anesidora client to save pandora tracks offline
     type:
       - experiment
     pic:
-      - img/projects/id3.png
+      - /img/projects/id3.png
 
   - title: Planck
     sub: coloring planck cmbr like wmap
     type:
       - art
     pic:
-      - img/projects/planck.jpg
+      - /img/projects/planck.jpg
 
   - title: Pinball
     sub: a simple pinball game
     type:
       - game
     pic:
-      - img/projects/pinball.png
+      - /img/projects/pinball.png
 
   - title: gravity
     sub: a simple game with attractors
     type:
       - game
     pic:
-      - img/projects/gravity.png
+      - /img/projects/gravity.png
 
   - title: HeapQueue.JS
     sub: a simple priority queue in javascript
     type:
       - library
     pic:
-      - img/projects/heap.png
+      - /img/projects/heap.png
 
   - title: vX.JS
     sub: a javascript library that favors size over clarity
     type:
       - library
     # pic:
-    #   - img/projects/vxjs.png
+    #   - /img/projects/vxjs.png
 
 
   - title: SubleqVM
@@ -551,21 +551,21 @@ projects:
     type:
       - experiment
     # pic:
-    #   - img/projects/hqx.png
+    #   - /img/projects/hqx.png
 
   - title: hqx.js
     sub: pixel art scaling in the browser
     type:
       - library
     pic:
-      - img/projects/hqx.png
+      - /img/projects/hqx.png
 
   - title: distributed pi
     sub: compute pi with bpf algorithm
     type:
       - experiment
     pic:
-      - img/projects/pi.png
+      - /img/projects/pi.png
 
   - title: Brass Doge
     sub: |
@@ -573,7 +573,7 @@ projects:
     type:
       - art
     pic:
-      - img/projects/brassdoge.jpg
+      - /img/projects/brassdoge.jpg
 
     subprojects:
       - title: Lasers
@@ -582,7 +582,7 @@ projects:
         type:
           - art
         pic:
-          - img/projects/lasers.jpg
+          - /img/projects/lasers.jpg
 
       - title: Alarm/Bed
         type: 
@@ -590,4 +590,4 @@ projects:
         sub: |
               yeah. okay.
         pic:
-          - img/projects/alarm.jpg
+          - /img/projects/alarm.jpg
