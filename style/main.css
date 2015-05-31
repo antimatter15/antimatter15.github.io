@@ -417,6 +417,9 @@ article {
     padding-right: 30px;
     color: #8a8b8a;
   }
+  .slogan {
+    display: none;
+  }
   #content {
     width: 850px;
     padding: 30px;
@@ -540,7 +543,7 @@ article {
     overflow-y: auto;
   }
   .projects .major {
-    width: 315.2px;
+    width: 313.2px;
     float: left;
   }
   .projects .major img {
@@ -653,6 +656,9 @@ article {
     width: 200px;
     padding-right: 30px;
     color: #8a8b8a;
+  }
+  .slogan {
+    display: none;
   }
   #content {
     width: 700px;
@@ -777,7 +783,7 @@ article {
     overflow-y: auto;
   }
   .projects .major {
-    width: 255.2px;
+    width: 253.2px;
     float: left;
   }
   .projects .major img {
@@ -889,6 +895,9 @@ article {
     width: 200px;
     padding-right: 20px;
     color: #8a8b8a;
+  }
+  .slogan {
+    display: none;
   }
   #content {
     width: 600px;
@@ -1013,7 +1022,7 @@ article {
     overflow-y: auto;
   }
   .projects .major {
-    width: 223.2px;
+    width: 221.2px;
     float: left;
   }
   .projects .major img {
