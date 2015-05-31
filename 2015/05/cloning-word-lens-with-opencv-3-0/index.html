@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="somewhere to talk about ideas and projects and stuff like everyone else">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Cloning Word Lens with OpenCV 3.0</title>
+  </head>
+  <body>
+    <div class="whitebox">
+      <div class="graybar top">
+        <header class="top">
+          <div class="slogan">somewhere to talk about random ideas and projects like everyone else</div><a href="/">
+            <h1 class="logo">
+              stuff
+               <span class="byline">by antimatter15</span>
+            </h1></a>
+        </header>
+      </div>
+      <div id="main">
+        <div class="sidebar">
+          <div class="about">
+            <p class="emph">
+              Hi. I’m <b>Kevin Kwok</b>, and I’m currently a sophomore at <b>MIT</b>, 
+              and this is my obligatory online presence or whatever.  
+            </p>
+            <p>
+              I regularly updated this site from 2007, when I started it in elementary school, 
+              to summer 2014, when it was unwittingly absorbed into an international phishing ring.
+            </p>
+            <p>
+              But like a phoenix, hydra or the national deficit, the site is back 
+              again bigger than ever (after a rather long gestation period).
+            </p>
+            <p>
+              For more obnoxious autobiographical content 
+              blended with bits of nostalgia for the old PHP-on-sketchy-free-webhosting days, click here.
+            </p>
+          </div><br>
+          <section class="archive"><a href="/archive">
+              <h2>Archive</h2></a>
+            <ul>
+              <li>
+                <ul>
+                  <li><a href="/2015/04"><span class="month">April</span> <span class="year">2015</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2014/12"><span class="month">December</span> <span class="year">2014</span></a></li>
+                  <li><a href="/2014/06"><span class="month">June</span> <span class="year">2014</span></a></li>
+                  <li><a href="/2014/05"><span class="month">May</span> <span class="year">2014</span></a></li>
+                  <li><a href="/2014/04"><span class="month">April</span> <span class="year">2014</span></a></li>
+                  <li><a href="/2014/03"><span class="month">March</span> <span class="year">2014</span></a></li>
+                  <li><a href="/2014/02"><span class="month">February</span> <span class="year">2014</span></a></li>
+                  <li><a href="/2014/01"><span class="month">January</span> <span class="year">2014</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2013/12"><span class="month">December</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/11"><span class="month">November</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/10"><span class="month">October</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/09"><span class="month">September</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/08"><span class="month">August</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/07"><span class="month">July</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/06"><span class="month">June</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/05"><span class="month">May</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/04"><span class="month">April</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/03"><span class="month">March</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/02"><span class="month">February</span> <span class="year">2013</span></a></li>
+                  <li><a href="/2013/01"><span class="month">January</span> <span class="year">2013</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2012/12"><span class="month">December</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/11"><span class="month">November</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/10"><span class="month">October</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/09"><span class="month">September</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/08"><span class="month">August</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/07"><span class="month">July</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/06"><span class="month">June</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/05"><span class="month">May</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/04"><span class="month">April</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/03"><span class="month">March</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/02"><span class="month">February</span> <span class="year">2012</span></a></li>
+                  <li><a href="/2012/01"><span class="month">January</span> <span class="year">2012</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2011/12"><span class="month">December</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/11"><span class="month">November</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/10"><span class="month">October</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/09"><span class="month">September</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/08"><span class="month">August</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/07"><span class="month">July</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/06"><span class="month">June</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/05"><span class="month">May</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/04"><span class="month">April</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/03"><span class="month">March</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/02"><span class="month">February</span> <span class="year">2011</span></a></li>
+                  <li><a href="/2011/01"><span class="month">January</span> <span class="year">2011</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2010/12"><span class="month">December</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/11"><span class="month">November</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/10"><span class="month">October</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/09"><span class="month">September</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/08"><span class="month">August</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/07"><span class="month">July</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/06"><span class="month">June</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/05"><span class="month">May</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/04"><span class="month">April</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/03"><span class="month">March</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/02"><span class="month">February</span> <span class="year">2010</span></a></li>
+                  <li><a href="/2010/01"><span class="month">January</span> <span class="year">2010</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2009/12"><span class="month">December</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/11"><span class="month">November</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/10"><span class="month">October</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/09"><span class="month">September</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/08"><span class="month">August</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/07"><span class="month">July</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/06"><span class="month">June</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/05"><span class="month">May</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/04"><span class="month">April</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/03"><span class="month">March</span> <span class="year">2009</span></a></li>
+                  <li><a href="/2009/01"><span class="month">January</span> <span class="year">2009</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2008/12"><span class="month">December</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/11"><span class="month">November</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/10"><span class="month">October</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/09"><span class="month">September</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/08"><span class="month">August</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/07"><span class="month">July</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/06"><span class="month">June</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/05"><span class="month">May</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/04"><span class="month">April</span> <span class="year">2008</span></a></li>
+                  <li><a href="/2008/01"><span class="month">January</span> <span class="year">2008</span></a></li>
+                </ul><br>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="/2007/12"><span class="month">December</span> <span class="year">2007</span></a></li>
+                  <li><a href="/2007/11"><span class="month">November</span> <span class="year">2007</span></a></li>
+                  <li><a href="/2007/10"><span class="month">October</span> <span class="year">2007</span></a></li>
+                  <li><a href="/2007/09"><span class="month">September</span> <span class="year">2007</span></a></li>
+                  <li><a href="/2007/08"><span class="month">August</span> <span class="year">2007</span></a></li>
+                  <li><a href="/2007/05"><span class="month">May</span> <span class="year">2007</span></a></li>
+                </ul><br>
+              </li>
+            </ul>
+          </section>
+          <div class="tags">
+            <h2>Tags</h2><a href="/tag/3D" style="font-size: 13px">3D </a><a href="/tag/actionscript" style="font-size: 11px">actionscript </a><a href="/tag/ajax" style="font-size: 20px">ajax </a><a href="/tag/ajax animator" style="font-size: 20px">ajax animator </a><a href="/tag/animation" style="font-size: 11px">animation </a><a href="/tag/api" style="font-size: 13px">api </a><a href="/tag/apple" style="font-size: 20px">apple </a><a href="/tag/art" style="font-size: 11px">art </a><a href="/tag/awesome" style="font-size: 13px">awesome </a><a href="/tag/blog" style="font-size: 17px">blog </a><a href="/tag/browser" style="font-size: 20px">browser </a><a href="/tag/bugfix" style="font-size: 15px">bugfix </a><a href="/tag/canvas" style="font-size: 15px">canvas </a><a href="/tag/change" style="font-size: 15px">change </a><a href="/tag/chrome" style="font-size: 20px">chrome </a><a href="/tag/chrome extension" style="font-size: 11px">chrome extension </a><a href="/tag/chrome os" style="font-size: 11px">chrome os </a><a href="/tag/chromebook" style="font-size: 11px">chromebook </a><a href="/tag/code" style="font-size: 13px">code </a><a href="/tag/color" style="font-size: 11px">color </a><a href="/tag/colors" style="font-size: 11px">colors </a><a href="/tag/css" style="font-size: 11px">css </a><a href="/tag/demo" style="font-size: 11px">demo </a><a href="/tag/design" style="font-size: 20px">design </a><a href="/tag/elitist" style="font-size: 20px">elitist </a><a href="/tag/evil" style="font-size: 19px">evil </a><a href="/tag/experiment" style="font-size: 15px">experiment </a><a href="/tag/extension" style="font-size: 20px">extension </a><a href="/tag/ExtJS" style="font-size: 20px">ExtJS </a><a href="/tag/facebook" style="font-size: 11px">facebook </a><a href="/tag/fast" style="font-size: 20px">fast </a><a href="/tag/features" style="font-size: 15px">features </a><a href="/tag/firefox" style="font-size: 20px">firefox </a><a href="/tag/flash" style="font-size: 17px">flash </a><a href="/tag/free" style="font-size: 11px">free </a><a href="/tag/function" style="font-size: 13px">function </a><a href="/tag/future" style="font-size: 15px">future </a><a href="/tag/GAE" style="font-size: 13px">GAE </a><a href="/tag/github" style="font-size: 15px">github </a><a href="/tag/google" style="font-size: 20px">google </a><a href="/tag/google wave" style="font-size: 20px">google wave </a><a href="/tag/graphics" style="font-size: 15px">graphics </a><a href="/tag/hacking" style="font-size: 11px">hacking </a><a href="/tag/hosting" style="font-size: 19px">hosting </a><a href="/tag/html5" style="font-size: 19px">html5 </a><a href="/tag/idea" style="font-size: 13px">idea </a><a href="/tag/images" style="font-size: 11px">images </a><a href="/tag/interface" style="font-size: 11px">interface </a><a href="/tag/internet exploder" style="font-size: 20px">internet exploder </a><a href="/tag/ipad" style="font-size: 17px">ipad </a><a href="/tag/javascript" style="font-size: 20px">javascript </a><a href="/tag/json" style="font-size: 15px">json </a><a href="/tag/library" style="font-size: 11px">library </a><a href="/tag/lines" style="font-size: 13px">lines </a><a href="/tag/linux" style="font-size: 17px">linux </a><a href="/tag/login" style="font-size: 15px">login </a><a href="/tag/mac" style="font-size: 11px">mac </a><a href="/tag/magical" style="font-size: 15px">magical </a><a href="/tag/math" style="font-size: 11px">math </a><a href="/tag/meta" style="font-size: 13px">meta </a><a href="/tag/microsoft" style="font-size: 13px">microsoft </a><a href="/tag/microwave" style="font-size: 15px">microwave </a><a href="/tag/mirror" style="font-size: 11px">mirror </a><a href="/tag/mp3" style="font-size: 11px">mp3 </a><a href="/tag/multitouch" style="font-size: 13px">multitouch </a><a href="/tag/new" style="font-size: 19px">new </a><a href="/tag/ocr" style="font-size: 11px">ocr </a><a href="/tag/offline" style="font-size: 17px">offline </a><a href="/tag/old" style="font-size: 17px">old </a><a href="/tag/onlypaths" style="font-size: 17px">onlypaths </a><a href="/tag/pi" style="font-size: 19px">pi </a><a href="/tag/player" style="font-size: 11px">player </a><a href="/tag/processing" style="font-size: 11px">processing </a><a href="/tag/progress" style="font-size: 13px">progress </a><a href="/tag/prototype" style="font-size: 13px">prototype </a><a href="/tag/python" style="font-size: 20px">python </a><a href="/tag/raphael" style="font-size: 19px">raphael </a><a href="/tag/release" style="font-size: 13px">release </a><a href="/tag/rewrite" style="font-size: 13px">rewrite </a><a href="/tag/security" style="font-size: 13px">security </a><a href="/tag/shiny" style="font-size: 20px">shiny </a><a href="/tag/ShinyTouch" style="font-size: 13px">ShinyTouch </a><a href="/tag/site" style="font-size: 13px">site </a><a href="/tag/small" style="font-size: 19px">small </a><a href="/tag/speed" style="font-size: 11px">speed </a><a href="/tag/stuff" style="font-size: 11px">stuff </a><a href="/tag/SVG" style="font-size: 15px">SVG </a><a href="/tag/touch" style="font-size: 13px">touch </a><a href="/tag/update" style="font-size: 20px">update </a><a href="/tag/upload" style="font-size: 17px">upload </a><a href="/tag/vector" style="font-size: 13px">vector </a><a href="/tag/vectoreditor" style="font-size: 19px">vectoreditor </a><a href="/tag/version" style="font-size: 13px">version </a><a href="/tag/video" style="font-size: 15px">video </a><a href="/tag/vp8" style="font-size: 11px">vp8 </a><a href="/tag/vX JS" style="font-size: 19px">vX JS </a><a href="/tag/wave" style="font-size: 20px">wave </a><a href="/tag/wikify" style="font-size: 20px">wikify </a><a href="/tag/wikipedia" style="font-size: 17px">wikipedia </a><a href="/tag/wordpress" style="font-size: 20px">wordpress </a>
+          </div>
+        </div>
+        <div id="content"><a href="/2015/05/cloning-word-lens-with-opencv-3-0/">
+            <h2>Cloning Word Lens with OpenCV 3.0 <span title="Fri May 29 2015 23:23:54 GMT-0400 (EDT)" class="subtitle">30 May 2015</span>
+            </h2></a>
+          <article class="article">
+            <section class="content"><p><div class="pic md right" style="width: 200px" ><img src="/articles/2015/Word%20Lens/WordLensLogo.png" alt="Word Lens Logo" ><div class="caption">Fun fact: I just figured out how to get captions to work with my blogging system</div></div></p>
+<p>Word Lens was launched nearly <a href="http://en.wikipedia.org/wiki/Word_Lens">5 years ago</a>, but it still feels like a relic borrowed from the distant future. It understandably took the world by storm, and a few years later it was acquired by Google and folded into the <a href="http://googleblog.blogspot.com/2015/01/hallo-hola-ola-more-powerful-translate.html">Google Translate app</a>. </p>
+<p>Word Lens was an augmented reality translation app— it showed you the world as if through a camera viewfinder but miraculously substituted words written in another language with words written in your native tongue, all in the original font, orientation and&nbsp;color. </p>
+<p>At least for me, the instinctive reaction to witnessing a magic trick is to peer beneath the veneer and guess at the mechanics of it. It probably looks something like&nbsp;this:</p>
+<p><div class="pic md" style="" ><img src="/articles/2015/Word%20Lens/blocks.png" alt="Block Diagram" ></div></p>
+<p>The idea is pretty simple, we take an image from the camera, we figure out where the text is (text detection), we recognize that text (<span class="caps">OCR</span>), we figure out the geometry, font and color of the text (font recognition), we erase that text from the image (inpainting), and then finally we render the final result&nbsp;together.</p>
+<p>Half a decade ago— three full cycles of <a href="http://en.wikipedia.org/wiki/Moore%27s_law">Moore’s law</a>— meant processors back were pretty underpowered compared to mobile processors today. I’m sure developers at Word Lens went through great pains to make it reasonably performant, which probably explains why they used custom solutions for <span class="caps">OCR</span>, text detection and&nbsp;inpainting. </p>
+<p>But these days, almost every piece of this block diagram is built into OpenCV. Which is how an intractable feat of engineering gets replicated with only about a hundred lines of&nbsp;code.</p>
+<p><span class="more"></span></p>
+<h3 id="installing-opencv-3-0-rc1-opencv_contrib">Installing OpenCV 3.0 rc1 <span class="amp">&amp;</span>&nbsp;opencv_contrib</h3>
+<p>OpenCV 3.0 isn’t technically stable yet, so the version that you’ll readily find in your package manager probably won’t be new enough. At time of writing, the latest packaged version is <a href="http://opencv.org/opencv-3-0-rc1.html">OpenCV 3.0 Release Candidate 1</a>.</p>
+<pre><code><span style='display:none' detected-language='bash'></span>wget <span class="hljs-string">"https://github.com/Itseez/opencv/archive/3.0.0-rc1.zip"</span>
+unzip <span class="hljs-number">3.0</span>.<span class="hljs-number">0</span>-rc1.zip
+<span class="hljs-built_in">cd</span> opencv-<span class="hljs-number">3.0</span>.<span class="hljs-number">0</span>-rc1/
+</code></pre><p>The text detection module isn’t considered a core module, so we have to get opencv_contrib as well. I placed it in the <code>opencv-3.0.0-rc1</code> directory, but it doesn’t really&nbsp;matter. </p>
+<pre><code><span style='display:none' detected-language='groovy'></span>git clone <span class="hljs-string">https:</span><span class="hljs-comment">//github.com/Itseez/opencv_contrib.git</span>
+</code></pre><p>Now to actually build it, we need to create a build directory and run <code>cmake</code></p>
+<pre><code><span style='display:none' detected-language='bash'></span>mkdir build
+<span class="hljs-built_in">cd</span> build
+cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules ../
+make -j5
+<span class="hljs-built_in">sudo</span> make install
+</code></pre><h3 id="scene-text-detection">Scene Text&nbsp;Detection</h3>
+<p><div class="pic md right" style="width: 300px" ><img src="/articles/2015/Word%20Lens/badtime.jpg" alt="" ></div></p>
+<p>If you’ve ever tried to pipe a photo straight from a camera into Tesseract, you’ve probably seen  that the output is typically gibberish. Tesseract is pretty sensitive to noise and rotation and generally demands something binarized with a simple columnar&nbsp;layout. </p>
+<p><a href="/project/project-naptha/">Project Naptha</a> uses the Stroke Width Transform, connected components and a number of heuristics to figure out reasonable clusters of&nbsp;text. </p>
+<p>OpenCV 3.0 has had a scene text detection algorithm described by <a href="http://cmp.felk.cvut.cz/~neumalu1/neumann-cvpr2012.pdf">Neumann L., Matas J.</a> (<span class="caps">CVPR</span> 2012) since <a href="https://github.com/Itseez/opencv/commit/5abe3b59f5308a84dc3bd2c8b543b3972871278f">July 2013</a>. </p>
+<blockquote>
+<p>The scene text detection algorithm described below has been initially proposed by Lukás Neumann <span class="amp">&amp;</span> Jiri Matas [Neumann12]. The main idea behind Class-specific Extremal Regions is similar to the <span class="caps">MSER</span> in that suitable Extremal Regions (ERs) are selected from the whole component tree of the image. However, this technique differs from MSER in that selection of suitable ERs is done by a sequential classifier trained for character detection, i.e. dropping the stability requirement of MSERs and selecting class-specific (not necessarily stable)&nbsp;regions.</p>
+</blockquote>
+<p><div class="pic md" style="" ><img src="/articles/2015/Word%20Lens/neumann.png" alt="Maximally Stable Extremal Region Component Bifurcation Diagram" ></div></p>
+<pre><code><span style='display:none' detected-language='cpp'></span><span class="hljs-comment">// Create ERFilter objects with the 1st and 2nd stage default classifiers</span>
+<span class="hljs-comment">// since er algorithm is not reentrant we need one filter for channel</span>
+<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"Loading text detector..."</span> &lt;&lt; endl;
+<span class="hljs-stl_container"><span class="hljs-built_in">vector</span>&lt; Ptr&lt;ERFilter&gt;</span> &gt; er_filters1;
+<span class="hljs-stl_container"><span class="hljs-built_in">vector</span>&lt; Ptr&lt;ERFilter&gt;</span> &gt; er_filters2;
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i&lt;<span class="hljs-number">2</span>; i++) {
+    Ptr&lt;ERFilter&gt; er_filter1 = createERFilterNM1(loadClassifierNM1(<span class="hljs-string">"erfilter/trained_classifierNM1.xml"</span>),<span class="hljs-number">8</span>,<span class="hljs-number">0.00015f</span>,<span class="hljs-number">0.13f</span>,<span class="hljs-number">0.2f</span>,<span class="hljs-keyword">true</span>,<span class="hljs-number">0.1f</span>);
+    Ptr&lt;ERFilter&gt; er_filter2 = createERFilterNM2(loadClassifierNM2(<span class="hljs-string">"erfilter/trained_classifierNM2.xml"</span>),<span class="hljs-number">0.5</span>);
+    er_filters1.push_back(er_filter1);
+    er_filters2.push_back(er_filter2);
+}
+</code></pre><h3 id="text-recognition">Text&nbsp;Recognition</h3>
+<p>Then we’ll initialize the <span class="caps">OCR</span>&nbsp;engines:</p>
+<pre><code><span style='display:none' detected-language='cpp'></span><span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"Initializing <span class="caps">OCR</span> engines ..."</span> &lt;&lt; endl;
+<span class="hljs-keyword">int</span> num_ocrs = <span class="hljs-number">10</span>;
+<span class="hljs-stl_container"><span class="hljs-built_in">vector</span>&lt; Ptr&lt;OCRTesseract&gt;</span> &gt; ocrs;
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> o=<span class="hljs-number">0</span>; o&lt;num_ocrs; o++) ocrs.push_back(OCRTesseract::create());
+</code></pre><p>Something with the images and&nbsp;channels</p>
+<pre><code><span style='display:none' detected-language='cpp'></span><span class="hljs-comment">// Run the text detection twice</span>
+<span class="hljs-comment">// one with the regular grayscale image, for detecting light features on a dark background</span>
+<span class="hljs-comment">// and the image with colors negated, for detecting dark letters on a light background</span>
+<span class="hljs-stl_container"><span class="hljs-built_in">vector</span>&lt;Mat&gt;</span> channels;
+<span class="hljs-stl_container"><span class="hljs-built_in">vector</span>&lt;<span class="hljs-stl_container"><span class="hljs-built_in">vector</span>&lt;ERStat&gt;</span> &gt;</span> regions(<span class="hljs-number">2</span>); <span class="hljs-comment">//two channels</span>
+Mat grey;
+cvtColor(image,grey,COLOR_RGB2GRAY);
+channels.clear();
+channels.push_back(grey);
+channels.push_back(<span class="hljs-number">255</span>-grey);
+</code></pre><h3 id="inpainting">Inpainting</h3>
+<p><div class="pic md" style="" ><img src="/articles/2015/Word%20Lens/inpaint.png" alt="Inpainting" ><div class="caption">Here&#39;s an example of inpainting with Mathematica&#39;s built in Inpaint function. The first argument is the source image, and the second is a mask— which parts of the image should be kept or filled in. </div></div></p>
+<h3 id="font-recognition">Font&nbsp;Recognition</h3>
+</section>
+          </article>
+          <div style="text-align: right">
+            <ul class="tags">
+              <li><a href="/tag/google" style="font-size: 19.999999999999872px">#google</a> </li>
+              <li><a href="/tag/text" style="font-size: 11.192029220221176px">#text</a> </li>
+              <li><a href="/tag/cool" style="font-size: 10.179862099620916px">#cool</a> </li>
+              <li><a href="/tag/graphics" style="font-size: 15px">#graphics</a> </li>
+              <li><a href="/tag/desktop" style="font-size: 10.179862099620916px">#desktop</a> </li>
+              <li><a href="/tag/opencv" style="font-size: 10.474258731775668px">#opencv</a> </li>
+              <li><a href="/tag/experiment" style="font-size: 15px">#experiment</a> </li>
+              <li><a href="/tag/simple" style="font-size: 11.192029220221176px">#simple</a> </li>
+            </ul>
+          </div><br>
+          <div class="splitter">
+            <hr>related
+          </div>
+          <div class="hand"><a href="/project/project-naptha/" class="thumb">
+              <div class="caption">
+                <h2>Project Naptha</h2>
+                <div class="sub">highlight, copy and translate text from any image</div>
+              </div><img src="/img/projects/naptha-medium.jpg"></a><a href="/project/ocrad-js/" class="thumb">
+              <div class="caption">
+                <h2>ocrad.js</h2>
+                <div class="sub">optical character recognition in javascript with emscripten</div>
+              </div><img src="/img/projects/ocrad-medium.jpg"></a><a href="/project/inpaint-js/" class="thumb">
+              <div class="caption">
+                <h2>inpaint.js</h2>
+                <div class="sub">erase regions and objects from pictures in javascript</div>
+              </div><img src="/img/dog-medium.jpg"></a><a href="/project/phash-js/" class="thumb">
+              <div class="caption">
+                <h2>phash.js</h2>
+                <div class="sub">perceptual hashing for content-based image retrieval in javascript</div>
+              </div><img src="/img/dog-medium.jpg"></a>
+          </div>
+          <div class="splitter">
+            <hr>comments
+          </div><br><div id="disqus_thread"></div>
+          <script>
+            var disqus_shortname = 'antimatter15',
+                disqus_title = 'Cloning Word Lens with OpenCV 3.0',
+                disqus_url = 'https://antimatter15.com/2015/05/cloning-word-lens-with-opencv-3-0/';
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+      </div>
+    </div>
+    <script>
+      function squish(){
+        document.getElementById("squishfoot").className += "squish"
+      }
+    </script>
+    <style>
+      .squish { font-size: 9px }
+      .squishsquish { font-size: 8px }
+      .squishsquishsquish { font-size: 7px }
+      .squishsquishsquishsquish { font-size: 6px }
+      .squishsquishsquishsquishsquish { font-size: 5px }
+      .squishsquishsquishsquishsquishsquish { font-size: 4px }
+      .squishsquishsquishsquishsquishsquishsquish { visibility: hidden }
+    </style>
+    <div class="graybar bottom">
+      <footer>
+        <div id="squishfoot">I'm a tiny footer, please don't <a href="javascript:squish()">squish</a> me</div>
+      </footer>
+    </div>
+  </body>
+</html>

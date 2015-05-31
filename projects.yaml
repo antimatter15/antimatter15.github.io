@@ -268,7 +268,6 @@ featured:
         pic:
           - /img/projects/weather.jpg
 
-
       - title: Droste Dorm
         type:
           - art
@@ -276,6 +275,24 @@ featured:
               a poster on my wall, of my wall, featuring a particular poster
         pic:
           - /img/projects/droste.jpg
+
+      - title: Pedant
+        type:
+          - art
+        sub: |
+              augmented reality for your feet
+        featured: false
+        pic:
+          - /img/projects/pedant.jpg
+
+      - title: Gestures
+        type:
+          - school
+        sub: |
+              A light pen gesture recognizer inspired by Palm's Graffiti
+        featured: false
+        pic:
+          - /img/projects/gesture.jpg
 
       - title: Auto Scan
         featured: false
@@ -420,7 +437,8 @@ featured:
         sub: a gadget that crashes google wave
         type:
           - wave
-        caption: mentioned by xkcd!
+        caption: |
+                  [mentioned  by xkcd!](http://www.reddit.com/r/wave/comments/9rle7/tsunami_wave_destroyer_gadget_drop_on_any_wave_to/c0e4rzl)
         featured: false
         pic:
           - /img/projects/tsunami.png
@@ -476,12 +494,13 @@ featured:
     subprojects:
       - title: Schedule Compare
         type:
-          - web app
+          - school
         sub: discover classmates automatically by parsing facebook status updates
         pic:
           - /img/projects/sched.png
 
       - title: Chat Bot
+        cat: Facebook Bot
         type:
           - experiment
         sub: turing complete collatz tag code over facebook chat
@@ -568,6 +587,15 @@ projects:
       - experiment
     pic:
       - /img/projects/pi.png
+
+
+  - title: Invisible Motion
+    sub: Real Time Eulerian Video Magnification in HTML5
+    type:
+      - school
+    pic:
+      - /img/projects/evm.png
+
 
   - title: Brass Doge
     sub: |

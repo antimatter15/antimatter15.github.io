@@ -299,6 +299,7 @@ a.thumb {
 .subtitle {
   font-size: 14px;
   font-weight: 400;
+  white-space: nowrap;
   color: #5a5a5a;
 }
 .featured p:first-of-type {
@@ -334,9 +335,20 @@ footer {
 .nav .next {
   float: right;
 }
+article {
+  overflow-y: auto;
+}
 .projects h2 .caption {
   font-size: 14px;
   color: #8a8b8a;
+}
+#content .post .pic.md {
+  display: none;
+}
+#content .pic .caption {
+  font-size: 14px;
+  color: #8a8b8a;
+  text-align: right;
 }
 @media (min-width: 1150px) {
   hr {
@@ -369,6 +381,7 @@ footer {
   }
   article {
     margin-bottom: 30px;
+    line-height: 1.5em;
   }
   #content {
     word-wrap: break-word;
@@ -408,10 +421,21 @@ footer {
     margin-left: 15px;
     margin-bottom: 15px;
   }
-  #content .post .caption {
-    font-size: 14px;
-    color: #8a8b8a;
-    text-align: right;
+  #content .pic.right {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 0;
+  }
+  #content .pic.left {
+    margin-left: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  #content .pic img {
+    max-width: 100%;
   }
   .hand {
     overflow-y: auto;
@@ -588,6 +612,7 @@ footer {
   }
   article {
     margin-bottom: 30px;
+    line-height: 1.5em;
   }
   #content {
     word-wrap: break-word;
@@ -627,10 +652,21 @@ footer {
     margin-left: 15px;
     margin-bottom: 15px;
   }
-  #content .post .caption {
-    font-size: 14px;
-    color: #8a8b8a;
-    text-align: right;
+  #content .pic.right {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 0;
+  }
+  #content .pic.left {
+    margin-left: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  #content .pic img {
+    max-width: 100%;
   }
   .hand {
     overflow-y: auto;
@@ -806,6 +842,7 @@ footer {
   }
   article {
     margin-bottom: 20px;
+    line-height: 1.5em;
   }
   #content {
     word-wrap: break-word;
@@ -845,10 +882,21 @@ footer {
     margin-left: 10px;
     margin-bottom: 10px;
   }
-  #content .post .caption {
-    font-size: 14px;
-    color: #8a8b8a;
-    text-align: right;
+  #content .pic.right {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  #content .pic.left {
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  #content .pic img {
+    max-width: 100%;
   }
   .hand {
     overflow-y: auto;
@@ -1034,17 +1082,22 @@ footer {
   }
   article {
     margin-bottom: 20px;
+    line-height: 1.5em;
   }
-  .featured .pic .caption {
-    color: #8a8b8a;
-    font-size: 14px;
-    margin-bottom: 20px;
+  .featured img {
+    max-height: 200px;
+    width: auto;
   }
   img {
     width: 100%;
   }
+  .pic {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .archive,
-  .tags {
+  .tags,
+  .about {
     display: none;
   }
   .sidebar {
