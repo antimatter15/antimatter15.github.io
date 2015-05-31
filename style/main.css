@@ -345,9 +345,14 @@ article {
 #content .post .pic.md {
   display: none;
 }
+#content .pic {
+  clear: both;
+}
 #content .pic .caption {
   font-size: 14px;
   color: #8a8b8a;
+}
+#content .pic.right .caption {
   text-align: right;
 }
 @media (min-width: 1150px) {

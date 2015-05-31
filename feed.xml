@@ -21,6 +21,10 @@
 &lt;p&gt;Most importantly though, it’s now a hip static site hosted on Github Pages (though I might move to S3), so the Turkish phishers last remaining venue for hijacking this site may be sending a pull request. &lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&quot;getting-hacked&quot;&gt;Getting Hacked&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://localhost:8080/2014/06/blog-hacked/&quot;&gt;&lt;div class=&quot;pic md right&quot; style=&quot;width: 300px&quot; &gt;&lt;img src=&quot;/articles/2015/Blog%20Reboot/paypal.png&quot; alt=&quot;&quot; &gt;&lt;div class=&quot;caption&quot;&gt;I unwittingly invited some consultants work on the new blog design, but all they could come up with was clearly somewhat unoriginal...&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I don’t generally pay a lot of attention to this blog— especially during the beginning of every month. I used to generally hold myself to a rule that I would post something new at least once a month, but that policy kept slipping and then there was a mad dash to finish some blog post the first or second day of each new month to be retroactively timestamped. &lt;/p&gt;
+&lt;p&gt;Anyway, point is that I didn’t notice when the site got hacked for a few days. Unfortunately I don’t have any screenshots of what the site looked like when it was hacked. And at this point I can’t promise you that my mental model of what it looked like is anything more than a hallucination. &lt;/p&gt;
+&lt;p&gt;It’s a bit of an interesting chapter in my blog’s history, so I’ve spun off this section &lt;a href=&quot;http://localhost:8080/2014/06/blog-hacked/&quot;&gt;into its own post&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;first-sketches&quot;&gt;First Sketches&lt;/h3&gt;
 &lt;p&gt;&lt;div class=&quot;pic md right&quot; style=&quot;width: 200px&quot; &gt;&lt;img src=&quot;/articles/2015/Blog%20Reboot/firstsketch.png&quot; alt=&quot;&quot; &gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;I guess it makes a reasonable amount of sense to write about how this site works. This is the first incarnation of the blog which is to any appreciable extent aesthetically original. It isn’t the default theme of JupiterCMS, PHPFusion, nor is it a free template for Wordpress. &lt;/p&gt;
@@ -34,6 +38,9 @@
 &lt;p&gt;One thing that I noticed is that the sequence of my projects tends to be pretty structured. Over the years, I tend to explore little ideas which tend to culminate into singular projects— or alternatively, I build a larger project and spin off smaller components. All of this tends to happen over a relatively short time period (a few months to a year). &lt;/p&gt;
 &lt;p&gt;So in terms of a projects list, this means that I can introduce a bit of an aesthetic cadence where a series of minor projects are occasionally punctuated by larger projects. And because of this natural faux-hierarchy there’s a natural clustering which is generally both temporal and subjective. The short projects have single-sentence summaries, whereas the larger projects can have a paragraph worth of elaboration.&lt;/p&gt;
 &lt;p&gt;Naturally, all the project descriptions are hyperlinked and lead to a project page which includes all the blog posts documenting the process of creating that particular project. &lt;/p&gt;
+&lt;h3 id=&quot;new-tools&quot;&gt;New Tools&lt;/h3&gt;
+&lt;p&gt;At some point I helped design a mobile app and ended up getting reasonably familiar with Adobe Illustrator. &lt;/p&gt;
+&lt;p&gt;It was also at this time that I started using tools that designers use— things like &lt;a href=&quot;http://www.adobe.com/products/illustrator.html&quot;&gt;Adobe Illustrator&lt;/a&gt; and &lt;a href=&quot;http://bohemiancoding.com/sketch/&quot;&gt;Bohemian Coding’s Sketch&lt;/a&gt;. &lt;/p&gt;
 </description>
     </item>
     <item>
@@ -395,11 +402,17 @@ $&lt;/span&gt;v = '5b17fxo30zD8d/Ip5C3tQoMx4CRXYgx...8B';
 &lt;p&gt;The directory &lt;code&gt;sym&lt;/code&gt; seems to just contain a symlink entitled &lt;code&gt;root&lt;/code&gt; to— you guessed it— &lt;code&gt;/&lt;/code&gt;. &lt;/p&gt;
 &lt;p&gt;And finally &lt;code&gt;tumdizin&lt;/code&gt; seems to link to the web roots of 116 distinct shared hosting accounts which happen to reside on the same server.&lt;/p&gt;
 &lt;hr&gt;
+&lt;p&gt;There’s also that folders which blow up in the tree &lt;code&gt;x4MslaR1CW&lt;/code&gt;, and &lt;code&gt;ptRiJiayze&lt;/code&gt;. You can probably guess by files like &lt;code&gt;logo_paypal_106x29.png&lt;/code&gt; that this site got turned essentially into a phishing website for Paypal. I’m actually rather amazed that the result looks so plausible. &lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;pic md&quot; style=&quot;&quot; &gt;&lt;img src=&quot;/articles/2014/Getting%20Hacked/paypal.png&quot; alt=&quot;&quot; &gt;&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;However, it seems that there was some weird activity going on starting a few days before the massive traffic. There’s an &lt;code&gt;error_log&lt;/code&gt; file which seems to grow pretty slowly in general. There was a fairly large stretch from January to June with no errors— and then it seemed to constantly encounter these errors leading up to the traffic spike. &lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&lt;span style='display:none' detected-language='groovy'&gt;&lt;/span&gt;[&lt;span class=&quot;hljs-number&quot;&gt;03&lt;/span&gt;-Jun-&lt;span class=&quot;hljs-number&quot;&gt;2014&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;17&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;06&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;05&lt;/span&gt; UTC] PHP &lt;span class=&quot;hljs-string&quot;&gt;Warning:&lt;/span&gt;  Cannot modify header information - headers already sent by (output started at &lt;span class=&quot;hljs-regexp&quot;&gt;/home/&lt;/span&gt;antimatt&lt;span class=&quot;hljs-regexp&quot;&gt;/public_html/&lt;/span&gt;wp&lt;span class=&quot;hljs-regexp&quot;&gt;/wp-rss.php(1) : eval()'d code:1) in /&lt;/span&gt;home&lt;span class=&quot;hljs-regexp&quot;&gt;/antimatt/&lt;/span&gt;public_html&lt;span class=&quot;hljs-regexp&quot;&gt;/wp/&lt;/span&gt;wp-includes/pluggable.php on line &lt;span class=&quot;hljs-number&quot;&gt;1121&lt;/span&gt;
 [&lt;span class=&quot;hljs-number&quot;&gt;04&lt;/span&gt;-Jun-&lt;span class=&quot;hljs-number&quot;&gt;2014&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;19&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;31&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;54&lt;/span&gt; UTC] PHP &lt;span class=&quot;hljs-string&quot;&gt;Warning:&lt;/span&gt;  include(images&lt;span class=&quot;hljs-regexp&quot;&gt;/settings.php): failed to open stream: No such file or directory in /&lt;/span&gt;home&lt;span class=&quot;hljs-regexp&quot;&gt;/antimatt/&lt;/span&gt;public_html&lt;span class=&quot;hljs-regexp&quot;&gt;/wp/&lt;/span&gt;wp-content&lt;span class=&quot;hljs-regexp&quot;&gt;/themes/&lt;/span&gt;carrington-woot/footer.php on line &lt;span class=&quot;hljs-number&quot;&gt;24&lt;/span&gt;
 [&lt;span class=&quot;hljs-number&quot;&gt;04&lt;/span&gt;-Jun-&lt;span class=&quot;hljs-number&quot;&gt;2014&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;19&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;31&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;54&lt;/span&gt; UTC] PHP &lt;span class=&quot;hljs-string&quot;&gt;Warning:&lt;/span&gt;  include(images&lt;span class=&quot;hljs-regexp&quot;&gt;/settings.php): failed to open stream: No such file or directory in /&lt;/span&gt;home&lt;span class=&quot;hljs-regexp&quot;&gt;/antimatt/&lt;/span&gt;public_html&lt;span class=&quot;hljs-regexp&quot;&gt;/wp/&lt;/span&gt;wp-content&lt;span class=&quot;hljs-regexp&quot;&gt;/themes/&lt;/span&gt;carrington-woot/footer.php on line &lt;span class=&quot;hljs-number&quot;&gt;24&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;I ended up downloading a daily backup of the server which was taken before it was hacked (June 1, 2014) and installing it onto a small virtual machine. I downloaded a Wordpress plugin for exporting the entire website as static HTML pages and uploaded it to Github pages. This served as a stop-gap measure for almost an entire year while I was getting the new site to work.&lt;/p&gt;
+&lt;p&gt;This experience is largely why I decided that this new incarnation would be a static site— essentially free from the perils that come with a dynamic website. It’s not like the old version used dynamic content to much advantage anyway, it was cached enough that it was practically static anyway. &lt;/p&gt;
+</description>
     </item>
     <item>
       <title>Perceptual color distance and RGB and L*a*b</title>
@@ -463,7 +476,7 @@ $&lt;/span&gt;v = '5b17fxo30zD8d/Ip5C3tQoMx4CRXYgx...8B';
 &lt;p&gt;— Parkinson’s Law&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;For the past four or so months, I’ve been working on just one major project. It’s rather depressing to think that I built a reasonably impressive initial prototype over the course of about a dozen sleep-deprived hours, and that all I’ve accomplished since then is minor polish. Technically, there have been at least two rewrites, completely new capabilities and substantially improved technology, but none of that really matters when it comes to describing the project. A project is what it is, at 80% completion, at 95% and 99%.&lt;/p&gt;
-&lt;p&gt;Second semester at school has started, and that means that Pass/No Record isn’t a thing anymore, and everyone else is adjusting their behavior appropriately. Problem is, _I _haven’t changed. It turns out that an entire semester of racing toward the bottom is unsustainable when suddenly the floor has been adjusted to above your current position. But the more important point is that it’s leaving less time, and in particular, less contiguous time to work on anything.&lt;/p&gt;
+&lt;p&gt;Second semester at school has started, and that means that Pass/No Record isn’t a thing anymore, and everyone else is adjusting their behavior appropriately. Problem is, &lt;em&gt;I&lt;/em&gt; haven’t changed. It turns out that an entire semester of racing toward the bottom is unsustainable when suddenly the floor has been adjusted to above your current position. But the more important point is that it’s leaving less time, and in particular, less contiguous time to work on anything.&lt;/p&gt;
 &lt;p&gt;Last month, I was working on a port of the Telea inpainting algorithm. Inpainting refers to any kind of image processing operation which attempts to intelligently fill in certain regions of an image with other content. Perhaps the most famous implementation of this is Photoshop’s Content Aware Fill feature, which uses a texture-synthesis and patch-based system, which enables them to copy over things like patterns, and textures, filling in vast contiguous regions of missing content. The problem is patch-based inpainting is almost always quite slow, in spite of its high quality results. There are simpler algorithms based on the Fast Marching Method like Telea or Navier-Stokes which use diffusion models and the ilk in order to propagate the solid colors of the bordering region of some inpainting mask inwards. I’ll write an actual blog post about this once I package it up and build a nifty demo for it.&lt;/p&gt;
 &lt;p&gt;Last year, Ben Kamens of Khan Academy posted about reverse engineering the flyout menu in Amazon, which suffered from the rather odd behavior of &lt;em&gt;acting exactly how it should&lt;/em&gt;. You totally should be able to navigate to a submenu without worrying about accidentally mousing over something else. I looked around for a context menu library which could actually do this, but for some reason I couldn’t find one, so I decided to make my own.&lt;/p&gt;
 </description>
@@ -1094,6 +1107,15 @@ There isn’t any &lt;em&gt;real&lt;/em&gt; evidence that such sweeping surveill
 &lt;p&gt;Basically, get the User ID, the name, and their online presence state for friends who are either active or idle in the list of the logged-in user. Since Facebook is an OAuth2-type API, you need an access token in order to do anything cool. I just use the &lt;a href=&quot;https://developers.facebook.com/tools/explorer/145634995501895/?method=GET&amp;amp;path=1686802955&quot;&gt;Facebook Graph API Explorer&lt;/a&gt; to generate my access tokens. Just go press “Get Access Token”, and select (at minimum) the permissions “user_online_presence”, “friends_online_presence” and “offline_access”. Then copy and paste the revealed token into some &lt;tt&gt;authkey.txt&lt;/tt&gt; and you should be set.&lt;/p&gt;
 &lt;p&gt;I have a python script to go through the log file and to render it as the polar chart which is depicted on the top of the page. The code used for that is frankly atrocious and the output is even more so. Python Imaging Library is used, which is a lovely library, except not for drawing graphics. There isn’t any smoothing or anti-aliasing on the arcs drawn by PIL and they all look hideous. So I render the chart at some absurdly high resolution and down-resize it in GIMP while adding layering, blurs and opacity in order to make the picture somewhat less atrocious. Also, it does’t support restricting the app to drawing a specific day of the week, even though it might be interesting to see the how the trend differs on a weekday versus weekend.&lt;/p&gt;
 &lt;p&gt;Something interesting about the appearance of the polar graph is that it almost resembles something of a digital fingerprint, and that brings up some interesting privacy considerations. Inside that graphic are the Facebook browsing habits of some two hundred people. There’s the question of how much this changes day by day for users, and to what extent this can be used to identify people. And even if a single ring doesn’t unambiguously represent a single person, the two hundred or so rings of their friends probably goes pretty far into identifying people. There’s also a striking amount of uniformity that says a lot about the type of people who I tend to associate with. Just at a glance, one can tell that there are very few people I’m friends with on Facebook who live in different timezones. Maybe what’s more dangerous than being able to identify a person is to be able to identify what kind of groups that person belongs to. And over the course of a day, just about everyone checks Facebook a few times. &lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Sparknotes on Kindle</title>
+      <link>http://localhost:8080/2012/05/sparknotes-on-kindle/</link>
+      <pubDate>Wed, 09 May 2012 08:35:49 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/2012/05/sparknotes-on-kindle/</guid>
+      <author></author>
+      <description>&lt;p&gt;Testing 123&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -4035,6 +4057,19 @@ Oh and another cool thing is that this entire post was written on my iPhone. Yes
 </description>
     </item>
     <item>
+      <title>Ajax Animator History</title>
+      <link>http://localhost:8080/2009/07/ajax-animator-history/</link>
+      <pubDate>Sun, 12 Jul 2009 18:24:04 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/2009/07/ajax-animator-history/</guid>
+      <author></author>
+      <description>&lt;p&gt;The Ajax Animator project started in early 2007, when I was in 6th grade. It was spawned by my interest in Flash in 2005 (because I liked expression by stickfigures and animation, and that it was one of the few ways to make applications or media for the Sony PSP) and my reluctance to pirate the Flash software after the trials expired. This intrest brought me to the liveswifers forum, which was engaging on a (as of yet and then) vaporware called OpenSwif. The idea for the Ajax Animator started when I was talking to a friend about a software program he used called Koolmoves. After making a forum post titled “Web 2.0 Flash IDE”, the project really started.&lt;/p&gt;
+&lt;p&gt;The development started based on &lt;a href=&quot;http://starkravingfinkle.org/blog/2006/04/richdraw-simple-vmlsvg-editor/&quot;&gt;RichDraw&lt;/a&gt;. It actually started out as RichDraw with a different layout. It was for a very long time built around the HTML/CSS/JS that was included in the RichDraw Demo. I never really modified RichDraw while using it, just building around it. I added a “timeline” (not at that time functional) which was just a dynamically generated table counting from 0-100. I added more stuff, looking for random cool scripts that made windows, dialogs, and color pickers.&lt;/p&gt;
+&lt;p&gt;Eventually, I found &lt;a href=&quot;http://www.dhtmlgoodies.com/&quot;&gt;DHTML Goodies&lt;/a&gt; (mostly for it’s color picker widget), and then used it’s DHTML Suite to rewrite the entire application. After it was rewritten, It still was totally disfunctional. I added support for manual frame-by-frame animation and then Flash export thanks to &lt;a href=&quot;http://freemovie.sourceforge.net&quot;&gt;freemovie&lt;/a&gt;. Around this time, I made a Google Code project for it and began using SVN.&lt;/p&gt;
+&lt;p&gt;After looking thorugh the DHTML Suite page, I found a link to another library called &lt;a href=&quot;http://extjs.com&quot;&gt;ExtJS&lt;/a&gt;. I ported from the DHTML Suite to ExtJS 1.0. Then I versioned it 1.0. I added some pretty neat features, like tweening, sharing, and more.&lt;/p&gt;
+&lt;p&gt;Later, when ExtJS 2.0 came out, I began developing the next version of the Ajax Animator. Also, realizing how incomplete the project was, the versioning scale was changed and it was now developing 0.20. It was a full rewrite from scratch. During development Ext 2.1 came out so development migrated to that version. This version polished things up a lot with newer development paradigms and a new vector drawing editor called OnlyPaths, contributed by josep_ssv. It had a new cross-platform JSON based serialized graphics format, and supported export to many different formats. One feature that was never ported to 0.2 was support for user accounts and server side storage.&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>ShinyTouch Progress Update + Fresnel's Equations</title>
       <link>http://localhost:8080/2009/07/shinytouch-progress-update-fresnel-s-equations/</link>
       <pubDate>Sun, 12 Jul 2009 00:30:56 -0400</pubDate>
@@ -5233,6 +5268,23 @@ for some reason, this messed up the compilier. I changed it to.&lt;/p&gt;
 </description>
     </item>
     <item>
+      <title>About</title>
+      <link>http://localhost:8080/2008/05/about/</link>
+      <pubDate>Wed, 07 May 2008 17:50:28 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/2008/05/about/</guid>
+      <author></author>
+      <description>&lt;p&gt;I’m really not that interesting. This blog is just a place where I talk about random ideas or projects like just about everyone else.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;I’ve never really been into talking about myself, rather just the stuff I do or think. I may be somewhat paranoid, or whatever.  I think I’m an &lt;a href=&quot;http://en.wikipedia.org/wiki/INTP&quot;&gt;INTP&lt;/a&gt; but I’m not too certain (could my subconscious be deceiving me?).&lt;/p&gt;
+&lt;p&gt;If you’re more interested on the history of this blog, well, it started a long time ago. I started with &lt;a href=&quot;http://php-fusion.co.uk/news.php&quot;&gt;phpfusion&lt;/a&gt; as my CMS (and &lt;a href=&quot;http://110mb.com&quot;&gt;110mb&lt;/a&gt; as my host) back in late May 2007, and switched to &lt;a href=&quot;http://wordpress.org&quot;&gt;WordPress&lt;/a&gt; and &lt;a href=&quot;http://phpbb.org/&quot;&gt;phpBB&lt;/a&gt; in mid-2008. Later the year, I got a new web host, &lt;a title=&quot;THIS HOST SUCKS!&quot; href=&quot;http://godaddy.com&quot;&gt;GoDaddy&lt;/a&gt;, but the blog didn’t migrate there. Just a few days later I switched from phpBB to &lt;a href=&quot;http://bbpress.org&quot;&gt;BBPress&lt;/a&gt;. From then to Mid-July 2009, I upgraded to WordPress 2.8 and migrated to a &lt;a href=&quot;http://dreamhost.com&quot;&gt;new host&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This blog initially was for the sole purpose of hosting changelogs for the Ajax Animator project (which itself began sometime before March of 2007).&lt;/p&gt;
+&lt;p&gt;Before this blog, I had several sites starting with a simple Google Page Creator one from 2005. After that I made a &lt;a href=&quot;http://www.jupiterportal.org/&quot;&gt;Jupiter CMS&lt;/a&gt; powered site and later used &lt;a href=&quot;http://joomla.org&quot;&gt;Joomla&lt;/a&gt; after experimenting with &lt;a href=&quot;http://drupal.org&quot;&gt;Drupal&lt;/a&gt;. After moving to 110mb, I used &lt;a href=&quot;http://php-fusion.co.uk/news.php&quot;&gt;phpfusion&lt;/a&gt; because people on the forums seem to like it. Now I’m on wordpress (and repeating whatever I wrote 2 paragraphs above)!&lt;/p&gt;
+&lt;p&gt;This about page is pretty much the way it was in 2008, and it’s kind of weird to think that that was over half a decade ago.&lt;/p&gt;
+&lt;p&gt;If you want to contact me, my email’s &lt;strong&gt;antimatter15@gmail.com&lt;/strong&gt; I’d really appreciate it if nobody sent spambots after me. You can follow me on Twitter at &lt;a href=&quot;http://twitter.com/antimatter15&quot;&gt;@antimatter15&lt;/a&gt; or on &lt;a href=&quot;https://plus.google.com/116347431032639424492/about&quot;&gt;Google+&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Hello world!</title>
       <link>http://localhost:8080/2008/05/hello-world/</link>
       <pubDate>Wed, 07 May 2008 01:50:28 -0400</pubDate>
@@ -5472,6 +5524,105 @@ I think of it as a development cycle, somebody makes something that is expensive
 Now, what about Flash. According to adobe, 97% of all people who browse the Internet have flash player installed. By far larger than the amount of people who have outlook, thunder bird, Microsoft office, or Openoffice installed. Flash also accounts for a large percent of So why isn’t there a freeware open source replacement to this $400 software? There are though, UIRA, F4L, QFlash, KDSFlash, and more, but they are early in development. So when is the third generation web 2.0 equivalent for animation software coming? This is what I want to develop.
 This is a project to make an open-source browser based Flash Authoring system.&lt;/p&gt;
 &lt;p&gt;Please post comments in the shout box.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>PSP Portal Installer Beta 1 Released!</title>
+      <link>http://localhost:8080/2006/09/psp-portal-installer-beta-1-released/</link>
+      <pubDate>Sat, 02 Sep 2006 07:50:29 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/2006/09/psp-portal-installer-beta-1-released/</guid>
+      <author></author>
+      <description>&lt;p&gt;&lt;a href=&quot;http://s4.quicksharing.com/v/256482/Portal_Installer_Beta_1.zip.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;http://s4.quicksharing.com/v/256482/Portal_Install&lt;wbr /&gt;er_Beta_1.zip.html&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;this is a simple program that can automatically unzip and install portals.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatic PSP drive memorization&lt;/li&gt;
+&lt;li&gt;Easy Step By Step Directions&lt;/li&gt;
+&lt;li&gt;Supports Root and Common folder installs&lt;/li&gt;
+&lt;li&gt;Supports zip portals&lt;/li&gt;
+&lt;li&gt;Supports uncompressed folders&lt;/li&gt;
+&lt;li&gt;quick&lt;/li&gt;
+&lt;li&gt;easy&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>My Freeware Image Resizer</title>
+      <link>http://localhost:8080/2006/08/my-freeware-image-resizer/</link>
+      <pubDate>Wed, 23  Aug 2006 06:19:24 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/2006/08/my-freeware-image-resizer/</guid>
+      <author></author>
+      <description>&lt;p&gt;Coded in VB.NET (requires .net framework 2.0 to run)
+PM me 4 the source code&lt;/p&gt;
+&lt;hr size=&quot;2&quot; width=&quot;100%&quot; /&gt;
+
+&lt;p&gt;Completly free not a demo or trial&lt;/p&gt;
+&lt;hr size=&quot;2&quot; width=&quot;100%&quot; /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://s2.quicksharing.com/v/1776353/ImageResizer.exe.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;http://s2.quicksharing.com/v/1776353/ImageResizer.&lt;wbr /&gt;exe.html&lt;/a&gt;
+&lt;a href=&quot;http://s2.quicksharing.com/v/1776353/ImageResizer.exe.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;http://s2.quicksharing.com/v/1776353/ImageResizer.&lt;wbr /&gt;exe.html&lt;/a&gt;
+&lt;a href=&quot;http://s2.quicksharing.com/v/1776353/ImageResizer.exe.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;http://s2.quicksharing.com/v/1776353/ImageResizer.&lt;wbr /&gt;exe.html&lt;/a&gt;
+&lt;a href=&quot;http://s2.quicksharing.com/v/1776353/ImageResizer.exe.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;http://s2.quicksharing.com/v/1776353/ImageResizer.&lt;wbr /&gt;exe.html&lt;/a&gt;
+&lt;a href=&quot;http://s2.quicksharing.com/v/1776353/ImageResizer.exe.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;http://s2.quicksharing.com/v/1776353/ImageResizer.&lt;wbr /&gt;exe.html&lt;/a&gt;
+&lt;a href=&quot;http://s2.quicksharing.com/v/1776353/ImageResizer.exe.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;http://s2.quicksharing.com/v/1776353/ImageResizer.&lt;wbr /&gt;exe.html&lt;/a&gt;
+&lt;a href=&quot;http://s2.quicksharing.com/v/1776353/ImageResizer.exe.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;http://s2.quicksharing.com/v/1776353/ImageResizer.&lt;wbr /&gt;exe.html&lt;/a&gt;
+&lt;a href=&quot;http://s2.quicksharing.com/v/1776353/ImageResizer.exe.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;http://s2.quicksharing.com/v/1776353/ImageResizer.&lt;wbr /&gt;exe.html&lt;/a&gt;
+&lt;a href=&quot;http://s2.quicksharing.com/v/1776353/ImageResizer.exe.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;http://s2.quicksharing.com/v/1776353/ImageResizer.&lt;wbr /&gt;exe.html&lt;/a&gt;
+&lt;a href=&quot;http://s2.quicksharing.com/v/1776353/ImageResizer.exe.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;http://s2.quicksharing.com/v/1776353/ImageResizer.&lt;wbr /&gt;exe.html&lt;/a&gt;
+&lt;a href=&quot;http://s2.quicksharing.com/v/1776353/ImageResizer.exe.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;http://s2.quicksharing.com/v/1776353/ImageResizer.&lt;wbr /&gt;exe.html&lt;/a&gt;&lt;/p&gt;
+&lt;hr size=&quot;2&quot; width=&quot;100%&quot; /&gt;
+
+&lt;p&gt;Features&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed Bugs in Saving to the psp&lt;/li&gt;
+&lt;li&gt;Fixed Bugs in saving to the pc&lt;/li&gt;
+&lt;li&gt;Added Image Flipping&lt;/li&gt;
+&lt;li&gt;Added Image Rotating&lt;/li&gt;
+&lt;li&gt;Added splash screen&lt;/li&gt;
+&lt;li&gt;This is a freeware PSP image resizer it Includes;&lt;/li&gt;
+&lt;li&gt;Freeware No Registration Necessary&lt;/li&gt;
+&lt;li&gt;No Install Necessary&lt;/li&gt;
+&lt;li&gt;LightWeight (only 48 kb Less than most flash games)&lt;/li&gt;
+&lt;li&gt;Dosent Cut Off Sides Changes the aspect ratio&lt;/li&gt;
+&lt;li&gt;One click Resizing to 480/272 pixels&lt;/li&gt;
+&lt;li&gt;Built in Direct Output To PSP Images&lt;/li&gt;
+&lt;li&gt;Easy To Use&lt;/li&gt;
+&lt;li&gt;I made it&lt;/li&gt;
+&lt;li&gt;1 click resize to psp&lt;/li&gt;
+&lt;li&gt;custom resizing&lt;/li&gt;
+&lt;li&gt;image preview&lt;/li&gt;
+&lt;li&gt;easy to use&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Large amount of supported extentions include&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jpg&lt;/li&gt;
+&lt;li&gt;bmp&lt;/li&gt;
+&lt;li&gt;png&lt;/li&gt;
+&lt;li&gt;gif&lt;/li&gt;
+&lt;li&gt;wmf&lt;/li&gt;
+&lt;li&gt;tiff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr size=&quot;2&quot; width=&quot;100%&quot; /&gt;
+
+&lt;h3 id=&quot;screenshots-of-verion-1&quot;&gt;SCREENSHOTS of verion 1&lt;/h3&gt;
+&lt;p&gt;&lt;div class=&quot;pic md&quot; style=&quot;&quot; &gt;&lt;img src=&quot;/articles/2006/Image%20Resizer/ImageResizer.jpg&quot; alt=&quot;&quot; &gt;&lt;/div&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;div class=&quot;pic md&quot; style=&quot;&quot; &gt;&lt;img src=&quot;/articles/2006/Image%20Resizer/ImageResizer6.jpg&quot; alt=&quot;&quot; &gt;&lt;/div&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;div class=&quot;pic md&quot; style=&quot;&quot; &gt;&lt;img src=&quot;/articles/2006/Image%20Resizer/ImageResizer5.jpg&quot; alt=&quot;&quot; &gt;&lt;/div&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;div class=&quot;pic md&quot; style=&quot;&quot; &gt;&lt;img src=&quot;/articles/2006/Image%20Resizer/ImageResizer4.jpg&quot; alt=&quot;&quot; &gt;&lt;/div&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;div class=&quot;pic md&quot; style=&quot;&quot; &gt;&lt;img src=&quot;/articles/2006/Image%20Resizer/ImageResizer3.jpg&quot; alt=&quot;&quot; &gt;&lt;/div&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;div class=&quot;pic md&quot; style=&quot;&quot; &gt;&lt;img src=&quot;/articles/2006/Image%20Resizer/ImageResizer2.jpg&quot; alt=&quot;&quot; &gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
   </channel>
