@@ -355,6 +355,19 @@ article {
 #content .pic.right .caption {
   text-align: right;
 }
+.draft {
+  background: #e27000;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.draft h2 {
+  color: white;
+  display: inline;
+  margin-right: 10px;
+}
+.draft span {
+  color: white;
+}
 @media (min-width: 1150px) {
   hr {
     border: 0;
@@ -425,6 +438,12 @@ article {
     float: right;
     margin-left: 15px;
     margin-bottom: 15px;
+  }
+  #content .draft {
+    margin: -30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    padding-bottom: 30px;
   }
   #content .pic.right {
     float: right;
@@ -657,6 +676,12 @@ article {
     margin-left: 15px;
     margin-bottom: 15px;
   }
+  #content .draft {
+    margin: -30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    padding-bottom: 30px;
+  }
   #content .pic.right {
     float: right;
     margin-left: 15px;
@@ -886,6 +911,12 @@ article {
     float: right;
     margin-left: 10px;
     margin-bottom: 10px;
+  }
+  #content .draft {
+    margin: -20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-bottom: 20px;
   }
   #content .pic.right {
     float: right;
