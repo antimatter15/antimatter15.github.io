@@ -591,6 +591,7 @@ projects:
 
   - title: Invisible Motion
     sub: Real Time Eulerian Video Magnification in HTML5
+    cat: Invisible Motion
     type:
       - school
     pic:
