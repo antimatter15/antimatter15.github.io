@@ -259,7 +259,8 @@ featured:
       - art
     pic:
       - /img/projects/ico.jpg
-    caption: |
+    # caption: |
+    #           thats very cool
     subprojects:
       - title: Dorm Weather
         sub: the art of collecting data and totally forgetting about it 
