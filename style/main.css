@@ -190,7 +190,7 @@ body {
 body {
   font-family: 'Avenir Next', 'Zombocom', sans-serif;
   font-size: 15px;
-  background-color: #e8e8e8;
+  background-color: #6887A5;
   text-rendering: optimizeLegibility;
   margin: 0;
   font-size: 16px;
@@ -279,7 +279,7 @@ a.thumb {
 }
 .logo {
   font-weight: 400;
-  color: #286AA6;
+  color: white;
   margin: 0;
   font-size: 42px;
   display: inline;
@@ -294,13 +294,16 @@ a.thumb {
 }
 .byline {
   margin-left: -6px;
+  color: #CFDEEC;
+}
+.subtitle {
+  color: #8798A9;
 }
 .byline,
 .subtitle {
   font-size: 14px;
   font-weight: 400;
   white-space: nowrap;
-  color: #5a5a5a;
 }
 .featured p:first-of-type {
   margin-top: 0;
@@ -315,19 +318,17 @@ header.top {
   padding-bottom: 30px;
 }
 .graybar {
-  background: #e8e8e8;
+  background: #6887A5;
   background-attachment: fixed;
   top: 0;
   overflow-y: auto;
 }
-.graybar.top {
-  border-bottom: 1px solid #d8d8d8;
-}
-.graybar.bottom {
-  border-top: 1px solid #d8d8d8;
-}
 footer {
   font-size: 10px;
+  color: white;
+}
+footer a {
+  color: #FFC400;
 }
 .nav .newer {
   float: left;
@@ -393,7 +394,7 @@ article {
 }
 .plain-text li {
   clear: both;
-  margin-bottom: 2px;
+  margin-bottom: 8px;
 }
 @media (min-width: 1150px) {
   hr {
@@ -451,7 +452,8 @@ article {
     width: 850px;
     padding: 30px;
     padding-top: 23px;
-    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     margin-top: -60px;
     background: white;
     word-wrap: break-word;
@@ -710,7 +712,8 @@ article {
     width: 700px;
     padding: 30px;
     padding-top: 23px;
-    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     margin-top: -60px;
     background: white;
     word-wrap: break-word;
@@ -968,7 +971,8 @@ article {
     width: 600px;
     padding: 20px;
     padding-top: 13px;
-    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     margin-top: -60px;
     background: white;
     word-wrap: break-word;
